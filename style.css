@@ -223,6 +223,7 @@ section.about {
 
 
 .img-3 {
+  /* A */
   background: url("./images/kappashoes.jpg");
   background-position: center 65%;
   background-size: cover;
