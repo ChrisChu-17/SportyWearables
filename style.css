@@ -77,9 +77,10 @@ header a:hover, footer a:hover {
   height: 100vh;
   width: 100%;
   position: relative;
-  background: url("images/home-bg.jpg");
+  background: url("./images/World-Cup-jersey.webp");
   background-position: center 65%;
   background-size: cover;
+  background-attachment: fixed;
 }
 
 .homepage::before {
@@ -150,14 +151,6 @@ section > p {
   text-align: center;
 }
 
-section .cards {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1200px;
-  margin-top: 50px;
-  padding: 0 10px;
-  justify-content: space-between;
-}
 
 section.about {
   margin: 0 auto;
@@ -180,37 +173,254 @@ section.about {
 .about .team ul {
   padding-left: 20px;
 }
+.text-main {
+  padding: 40px 15px; 
+  text-align:  center;
+}
+.main-service {
+  display: flex;
+  justify-content: center;
+}
+.container {
+  display: flex;
+  justify-content: space-around; 
+  width: 1500px;
+  border: 3px rgb(51, 51,51);
+  /* border-style: solid hidden solid; */
+  padding: 10px;
+  overflow: hidden;
+}
 
-section .cards .card {
+
+.img-1 {
+  background: url("./images/retroJersey.jpg");
+  background-position: center 65%;
+  background-size: cover;
+  /* border-right: 1px solid #333; */
+  width: 325px;
+  height: 520px;
+  border-radius: 2%;
+  position: relative;
+  z-index: 0;
+  transition: transform 0.3s;
+  height: auto;
+  box-shadow: 0px 0px 7px 7px #999999;;
+}
+
+.img-2 {
+  background: url("./images/footballJersey.jpg");
+  background-position: center 65%;
+  background-size: cover;
+  /* border: 1px solid #333; */
+  width: 325px;
+  height: 520px;
+  border-radius: 2%;
+ position: relative;
+ transition: transform 0.3s;
+ height: auto;
+ box-shadow: 0px 0px 7px 7px #999999;
+}
+
+
+.img-3 {
+  background: url("./images/kappashoes.jpg");
+  background-position: center 65%;
+  background-size: cover;
+  /* border: 1px solid #333; */
+  width: 325px;
+  height: 520px;
+  border-radius: 2%;
+  position: relative;
+  transition: transform 0.3s;
+  height: auto;
+  box-shadow: 0px 0px 7px 7px #999999;
+}
+
+.img-4 {
+  background: url("./images/scBall.jpg");
+  background-position: center 65%;
+  background-size: cover;
+  /* border: 1px solid #333; */
+  width: 325px;
+  height: 520px;
+  border-radius: 2%;
+  position: relative;
+  transition: transform 0.3s;
+  box-shadow: 0px 0px 7px 7px #999999;
+}
+
+.text-1 {
+  background-color: rgb(51, 51,51, 0.8);
+  padding: 0px 10px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -100%; 
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.img-1:hover  {
+  transform: scale(1.1);
+  /* filter: blur(1px); */
+  opacity: 1;
+}
+
+.img-1:hover .text-1 {
+  bottom: 260px;
+  /* opacity: 1; */
+}
+
+.text-2 {
+  background-color: rgba(51, 51,51, 0.8);
+  padding: 0px 10px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -100%; 
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  
+  z-index: 1;
+} 
+
+ .img-2:hover  {
+  transform: scale(1.1);
+  
+  opacity: 1;
+}
+
+.img-2:hover .text-2 {
+  bottom: 260px;
+  
+} 
+
+ .text-3 {
+  background-color: rgba(51, 51,51, 0.8);
+  padding: 0px 10px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: -100%; 
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+} 
+
+.img-3:hover  {
+  transform: scale(1.1);
+  
+  opacity: 1;
+}
+
+.img-3:hover .text-3 {
+  bottom: 260px;
+  
+} 
+
+
+ .text-4 {
+  background-color: rgba(51, 51,51,0.8);
+  border-radius: 4px;
+  padding: 0px 10px;
+  position: absolute;
+  bottom: -100%; 
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+} 
+
+.img-4:hover  {
+  transform: scale(1.1);
+  
+  opacity: 1;
+}
+
+.img-4:hover .text-4 {
+  bottom: 260px;
+  
+}  
+
+.title-1 {
+  color: rgb(245, 222, 178); 
+  text-align: center ;
+}
+
+.title-2 {
+  color: rgb(245, 222, 178); 
+  text-align: center ;
+}
+
+.title-3 {
+  color: rgb(245, 222, 178); 
+  text-align: center ;
+}
+
+.title-4 {
+  color: rgb(245, 222, 178); 
+  text-align: center ;
+}
+
+.clear {
+  clear: both;
+}
+
+/* section .cards .card {
   background: #fff;
-  padding: 40px 15px;
+  /* padding: 40px 15px; 
   list-style: none;
   border-radius: 5px;
   box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.04);
   margin-bottom: 40px;
-  width: calc(100% / 3 - 30px);
+  width: calc(100% / 4 - 5px);
   text-align: center;
-}
+  overflow: hidden;
+}  */
 
-.portfolio .cards .card {
-  padding: 0 0 20px;
-}
+
+
+/* .card .img-text{
+  position: absolute;
+   top: 0;
+  left: 0; 
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  color: black;
+  text-align: center;
+  padding: 10px;
+  opacity: 0;
+  transition: opacity 0.3s;
+} */
 
 .services .card img {
-  width: 120px;
-  height: 120px;
-  margin-bottom: 20px;
-  border-radius: 100%;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  /* border-radius: 10%; */
   object-fit: cover;
+  transition: transform 0.3s, filter 0.5s;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  text-decoration: none;
 }
 
-.portfolio .card img {
+
+.cards img:hover  {
+  /* background: rgba(255,255,255,0.3); */
+  transform: scale(1.1); 
+  filter: blur(1px);
+  opacity: 1;
+}
+
+/* .cards .img-text:hover {
+  opacity: 1;
+} */
+
+/* .portfolio .card img {
   width: 100%;
   padding-bottom: 10px;
   aspect-ratio: 16 / 9;
   object-fit: cover;
   border-radius: 7px;
-}
+} */
 
 .cards .card p {
   padding: 0 15px;
