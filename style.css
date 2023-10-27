@@ -223,7 +223,6 @@ section.about {
 
 
 .img-3 {
-  /* A */
   background: url("./images/kappashoes.jpg");
   background-position: center 65%;
   background-size: cover;
@@ -427,9 +426,76 @@ section.about {
   padding: 0 15px;
   margin-top: 5px;
 }
-
+/* 
 .about .row {
   padding: 0 10px;
+} */
+
+.slider{
+  width: 600px;
+  max-width: 100%;
+  height: 500px;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.lista{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: flex;
+  width: max-content;
+  transition: 1s;
+}
+.item img {
+  width: 600px;
+  max-width: 100%;
+  height: 500px;
+  object-fit: contain;
+  background-size: cover;
+}
+.bat{
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+.bat > button{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff5;
+  color: black;
+  border: none;
+  font-family: monospace;
+  font-weight: bold;
+}
+.dots{
+  position: absolute;
+  bottom: 10px;
+  color: #fff;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+.dots li{
+  list-style: none;
+  width: 7px;
+  height: 7px;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 20px;
+  transition: 1s;
+}
+.dots li.active{
+  width: 30px;
+  background-color: rebeccapurple;
 }
 
 .contact .row {
