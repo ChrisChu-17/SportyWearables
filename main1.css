@@ -7,13 +7,12 @@
     background-size: cover;
     font-family: sans-serif;
   }
-<<<<<<< Updated upstream
-=======
+
   .login-wrapper {
-    background: url('../images/World-Cup-jersey.webp');
+    background: url("../SportyWearables/images/World-Cup-jersey.webp");
     background-size: cover;
   }
->>>>>>> Stashed changes
+
   header {
     position: fixed;
     top: 0;
@@ -33,18 +32,14 @@
     align-items: center;
     justify-content: space-between;
   }
-<<<<<<< Updated upstream
-  
-=======
->>>>>>> Stashed changes
   .navbar input#menu-toggler {
     display: none;
   }
-  
   .navbar #hamburger-btn {
     cursor: pointer;
     display: none;
   }
+ 
   
   .navbar .all-links {
     display: flex;
@@ -74,7 +69,7 @@
   header a:hover, footer a:hover {
     color: #ddd;
   }
-<<<<<<< Updated upstream
+
   .login-wrapper {
     background: url("../SportyWearables/images/World-Cup-jersey.webp");
   }
@@ -87,8 +82,7 @@
     justify-content: center;
     width: 100%;  
   }
-  
-=======
+
   
   .login {
     height: 100vh;
@@ -98,7 +92,7 @@
     align-items: center;
     background: image()
   }
->>>>>>> Stashed changes
+
   .form {
     position: relative;
     width: 100%;
