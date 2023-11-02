@@ -4,14 +4,12 @@
     box-sizing: border-box;
   }
   body {
+   
+    background: url(images/World-Cup-jersey.webp);
     background-size: cover;
     font-family: sans-serif;
   }
 
-  .login-wrapper {
-    background: url("../SportyWearables/images/World-Cup-jersey.webp");
-    background-size: cover;
-  }
 
   header {
     position: fixed;
@@ -69,10 +67,11 @@
   header a:hover, footer a:hover {
     color: #ddd;
   }
-
   .login-wrapper {
-    background: url("../SportyWearables/images/World-Cup-jersey.webp");
+    background-image: url("../SportyWearables/images/World-Cup-jersey.webp");
+    background-size: cover;
   }
+  
   .login {  
     position: fixed;
     top: 0;
