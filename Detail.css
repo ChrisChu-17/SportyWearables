@@ -1,0 +1,187 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   background: url("./images/World-Cup-jersey.webp");
+    /* background-color: #333; */
+    color:white;
+    padding: 20px;
+    text-align: center;
+}
+.layout-row{
+    display: flex;
+    
+    max-width: 100rem;
+    margin: 0 auto;
+}
+.layout-column1{
+    flex: 1 1 100%;
+}
+.layout-column2{
+    flex: 1 1 100%;
+    margin-right: 5rem;
+    
+}
+.image-container{
+    display: flex;
+}
+.product-image{
+    height: 70%;
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+
+}
+.main-image{
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right:3% ;
+    justify-content: center;
+}
+.scroll-to-placement {
+    width: 4rem;
+}
+.product-title-container{
+    padding-bottom: 0;
+    margin: 0 0.9375rem;;
+    margin: 0;
+    font-size: 1.125rem;
+    line-height: 1.28;
+}
+.stock-message{
+    margin-top: 0,3125rem;
+}
+.stock-available{
+    color: #247e0c;
+    font-weight: 400;
+    font-size: .875rem;
+    line-height: 1.43;
+}
+.price-card{
+    margin: 0.9375rem 0.9375rem 0.75rem;
+    display: flex;
+  
+    line-height: 1.25rem;
+    font-size: .875rem;
+}
+.money-value{
+    font-size: 2rem;
+}
+.sr-only{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 0.0625rem;
+    margin: -0.0625rem;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 0.0625rem;
+    font-size: 30%;
+}
+sup{
+    font-size: 1rem;
+}
+.buy-box-container{
+    background-color: #f5f6f8;
+    border-top: auto;
+    border-bottom: auto;
+    margin-top: 0.9375rem;
+    margin-bottom: 0.9375rem;
+    padding: 1.25rem;
+}
+.div{
+    display: block;
+}
+.buy-box-custom-container{
+    font-size: .8125rem;
+}
+.size-selector-container{
+    margin: 0 0 0.9375rem;
+}
+.size-selector-header{
+    margin: 0 0 0.3125rem;
+    display: flex;
+    justify-content: flex-start;
+}
+.size-selector-label{
+    text-transform: none;
+    font-weight: 600;
+    margin: 0 0.625rem 0 0;
+    font-size: .875rem;
+}
+.legend{
+    display: block;
+    padding-inline-start: 2px;
+    padding-inline-end: 2px;
+    border-width: initial;
+    border-style: none;
+    border-color: initial;
+    border-image: initial;
+}
+.size-selector-value{
+    text-transform: none;
+    font-weight: 400;
+    font-size: .875rem;
+}
+.size-selector-list{
+    display: flex;
+    display: inline-block;
+    margin: 0.625rem 0.625rem 0 0;
+    border: 1px solid #242424;
+    font-size: .9375rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    color: #242424;
+    text-decoration: none;
+    line-height: 1.25rem;
+    white-space: nowrap;
+    border-radius: 0.1875rem;
+    transition: all .3s ease-out;
+    transition-property: background-color,color,border-color;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    
+}
+.size-selector-button.unavailable {
+    cursor: default;
+    border-color: #dbd8d6;
+    color: #dbd8d6;
+}
+
+.size-selector-button {
+    padding:  0.5rem 1.25rem;
+    margin: 0.625rem 0.75rem 0 0;
+}
+.size-selector-button {
+    display: inline-block;
+    margin: 0.625rem 0.625rem 0 0;
+    border: 1px solid #242424;
+    font-size: .9375rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    color: #242424;
+    text-decoration: none;
+    line-height: 1.25rem;
+    white-space: nowrap;
+    border-radius: 0.1875rem;
+    transition: all .3s ease-out;
+    transition-property: background-color,color,border-color;
+    overflow: hidden;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+}
+.size-selector-button .size-text{
+    display: flex;
+}
