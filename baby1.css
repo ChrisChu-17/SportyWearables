@@ -1,22 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.15;
     background-color: white;
     margin: 0;
     padding: 0;
 }
 
 header {
-   background: url("./images/World-Cup-jersey.webp");
     /* background-color: #333; */
-    color:white;
+    /* color:white;
     padding: 20px;
-    text-align: center;
+    text-align: center; */
 }
 
 h1 {
+    font-weight: 600;
     font-size: 36px;
+    
+    padding: 25px 20px;
+    /* border: 1px solid #bebebe; */
+    display: inline-block;
 }
 
+.headline {
+    text-align: center;
+    margin: 0px 0px;
+    /* background-color: #333; */
+}
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.img-wrapper {
+    height: 50px;
+    width: 100%;
+    background-image: url("./images/bannersale.png");
+    background-size: cover;
+    background-position: center 65%;
+}
+
+.img-container{
+    object-fit: cover;
+    object-position: center center;
+}
+
+.container {
+    display: flex;
+}
+
+.left-column {
+    width: 15%;
+    float: left;
+}
+
+.left-column .category {
+    position: sticky;
+    top: 0;
+}
+
+.left-column .category .category-title{
+    margin-left: 35%;
+}
+
+.left-column .category .category-box {
+    font-weight: 100;
+    padding: 20px 20px;
+    margin: 15px;
+    border-radius: 15px;
+    /* display: inline-block; */
+    border: 1px solid #333;
+    text-align: center;
+    background-color: #333;
+}
+
+.left-column .category .category-box:hover{
+    filter: opacity(90%);
+}
+
+.left-column .category .category-box a{
+    text-decoration: none;
+    color: wheat;
+    
+}
+
+.right-column{
+    width: 85%;
+    float: right;
+}
+
+.wrapper {
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    list-style: none;
+
+}
+
+ul.products li {
+    flex-basis: 33%;
+    padding-left: 15px ;
+    padding-right: 15px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+ul.products li img{
+    max-width: 100%;
+    height: auto;
+}
+h3 {
+    font-size: 18px;
+    color: wheat;
+    padding: 10px 20px;
+    border: 1px solid #bebebe;
+    
+}
+
+.product-infor{
+    padding: 20px 0px;
+}
+
+ul.products li .product-top{
+    position: relative;
+    overflow: hidden;
+}
+
+ul.products li .product-top .product-thumb{
+    display: block;
+}
+
+ul.products li:hover .product-top .product-thumb img{
+    filter: opacity(80%);
+}
+
+ul.products li .product-top .product-thumb img{
+    display: block;
+}
+
+ul.products li .product-top a.buy-now {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-color: #333;
+    color: wheat;
+    padding: 10px 0px;
+    position: absolute;
+    width: 100%;
+    bottom: -37px;
+    transition: 0.25s ease-in-out;
+    opacity: 0.85;
+}
+
+ul.products li:hover a.buy-now {
+    bottom: 0px;
+
+}
+
+.product-infor a{
+    display: block;
+    text-decoration: none;
+}
+
+.product-infor a.product-cat {
+    font-size: 11px;
+    color: #9e9e9e ;
+    text-transform: uppercase;
+    padding: 3px 0px;
+}
+
+.product-infor a.product-name{
+    padding: 3px 0px;
+    color: #333;
+}
+
+.product-price{  
+    color: red;
+    padding: 2px 0px;
+    font-weight: 600;
+}
+/* 
 .left-column{
     width: 20%;
     height: 150%;
@@ -96,7 +268,7 @@ li:hover {
 .line {
     margin-top: 20px;
     margin-bottom: 20px;
-    border-top: 1px solid palegreen ; /* Màu và độ dày của đường kẻ */
+    border-top: 1px solid palegreen ; 
     border-color: rgb(240, 189, 197);
 } 
 .container {
@@ -204,4 +376,4 @@ li {
 
 #checkout:hover {
     background-color: #0056b3;
-}
+} */
