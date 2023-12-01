@@ -185,3 +185,36 @@ sup{
 .size-selector-button .size-text{
     display: flex;
 }
+.shiipping-details-container{
+    border-top: 1px solid #d5d5d5;
+    padding: 0.9375rem 0;
+    margin: 0 0.9375rem;
+}
+.description-box-title {
+
+    display: inline-block;
+    cursor: pointer;
+    flex-direction: row;
+   
+    padding-bottom: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.description-box-content {
+    padding: 0.625rem 0;
+    font-size: .875rem;
+    margin: 0;
+    line-height: 1.67;
+}
+.shipping-message-container .padding {
+    padding-left: 1.125rem;
+}
+.li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    list-style: disc;
+    padding-left: 0.3125rem;
+    margin-bottom: 0.4375rem;
+}
