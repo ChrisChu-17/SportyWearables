@@ -193,4 +193,6 @@
   width: 100px;
   background-color: black;
 }
-  
+.login-wrapper.login.form.Register{
+  background-color: #ff652f;
+}
