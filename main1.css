@@ -86,6 +86,7 @@
     border-radius: 10px;
     color: #ffffff;
     box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+    display: ;
   }
   .form::before {
     content: "";
@@ -193,6 +194,22 @@
   width: 100px;
   background-color: black;
 }
-.login-wrapper.login.form.Register{
+.login-wrapper .login .form .submit-wrapper {
+  display: flex;
+  
+}
+.login-wrapper .login .form .Register a{
   background-color: #ff652f;
+  text-decoration: none;
+  display: inline-block;
+  margin-left: auto;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
 }
