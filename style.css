@@ -340,23 +340,43 @@ section.about {
 }  
 
 .title-1 {
-  color: rgb(245, 222, 178); 
   text-align: center ;
+  cursor: pointer;
+}
+
+.title-1 a {
+  text-decoration: none;
+  color: rgb(245, 222, 178);  
 }
 
 .title-2 {
-  color: rgb(245, 222, 178); 
+  cursor: pointer;
   text-align: center ;
+}
+
+.title-2 a {
+  text-decoration: none;
+  color: rgb(245, 222, 178);  
 }
 
 .title-3 {
-  color: rgb(245, 222, 178); 
+  cursor: pointer;
   text-align: center ;
 }
 
+.title-3 a {
+  text-decoration: none;
+  color: rgb(245, 222, 178);  
+}
+
 .title-4 {
-  color: rgb(245, 222, 178); 
+  cursor: pointer;
   text-align: center ;
+}
+
+.title-4 a {
+  text-decoration: none;
+  color: rgb(245, 222, 178);  
 }
 
 .clear {

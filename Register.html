@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="main1.css" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"> -->
     <title>Register Form </title>
   </head>
   <body>
@@ -20,7 +20,7 @@
           </svg>
         </label>
         <ul class="all-links">
-          <li><a href="#home"><a href="http://127.0.0.1:5501/index.html#home">Home</a></li>
+          <li><a href="#home"><a href="./index.html">Home</a></li>
           <li><a href="#services">Services</a></li>
           <!-- <li><a href="#portfolio">Portfolio</a></li> -->
           <li><a href="#about">About Us</a></li>
@@ -31,7 +31,7 @@
 
     <div class="login-wrapper">
       <div class="login" >
-      <form action="" class="form">     
+      <form action="./login.html" class="form">     
         <h2>Register</h2>
         <div class="input-group">
           <input type="text" name="loginUser" id="loginUser" required />
@@ -53,9 +53,20 @@
             />
             <label for="loginPassword">Confirm password</label>
           </div>
-        <input type="submit" value="Login" class="submit-btn" />
+        <input type="submit" value="Register" class="submit-btn" />
       </form>
       </div>
     </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector(".form");
+
+        form.addEventListener("submit", function(e) {
+
+          alert("Đăng kí thành công!");
+          
+        });
+      });
+    </script>
   </body>
 </html>
