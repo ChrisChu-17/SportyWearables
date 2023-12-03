@@ -185,36 +185,125 @@ sup{
 .size-selector-button .size-text{
     display: flex;
 }
-.shiipping-details-container{
-    border-top: 1px solid #d5d5d5;
-    padding: 0.9375rem 0;
-    margin: 0 0.9375rem;
-}
-.description-box-title {
 
+
+.dropdown {
+    background-color: #fff;
+    position: relative;
     display: inline-block;
-    cursor: pointer;
-    flex-direction: row;
+    border-top: 1px solid #d5d5d5;
+    width: 480px;
    
-    padding-bottom: 0;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
-.description-box-content {
-    padding: 0.625rem 0;
-    font-size: .875rem;
-    margin: 0;
-    line-height: 1.67;
+.dropbtn {
+    background-color: #ffffff;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
 }
-.shipping-message-container .padding {
-    padding-left: 1.125rem;
+    
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+li{
+    margin: 3% ;
+   
 }
-.li{
-    display: list-item;
-    text-align: -webkit-match-parent;
-    list-style: disc;
-    padding-left: 0.3125rem;
-    margin-bottom: 0.4375rem;
+.descripton-detail{
+    margin: 3%;
+    line-height: 20px;
 }
+.dropdown-content a:hover {background-color: #f1f1f1}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 480px;
+    font-size: 14px;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #ffffff;
+
+}
+.contact {
+    background-color: wheat;
+    display: flex;
+}
+.contact .row {
+    margin: 60px 0 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 30px;
+    justify-content: space-between;
+  }
+  
+  .contact .row .col {
+    padding: 0 10px;
+    
+  }
+  
+  .contact .col p {
+    margin-bottom: 10px;
+ 
+  }
+  
+  .contact .col p i {
+    color: #7a7a7a;
+    
+  }
+  
+  button{
+    background-color:  black;
+    color: white;
+    width: 310px;
+    height: 50px;
+    margin-right: 100px;
+    font-size: large;
+  }
+  
+  .contact form button:hover {
+    background: #525252;
+  }
+  
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    padding: 20px 0;
+  }
+  
+  footer div {
+    padding: 0 10px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer{
+    background: url("./images/World-Cup-jersey.webp");
+  }
+  footer span {
+    color: #fff;
+  }
+  
+  footer a {
+    padding: 0;
+  }
