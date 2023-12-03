@@ -51,12 +51,13 @@
             </div>
             <div class="loyout-row buy-box">
                 <div>
-                    <div class="buy-box-container">
+                <div class="buy-box-container">
                         <div class="buy-box-custom-container"></div>
                         <div class="buy-box-color-selector"></div>
                         <div class="size-selector-container" role="radio">
                             <div class="size-selector-header">
                                 <legend class="size-selector-label">Size</legend>
+                                <legend class="size-selector-label2">SizeChart</legend>
                                 <span class="size-selector-value"></span>
                             </div>
                             <div class="size-selector-list">
@@ -99,14 +100,27 @@
                                 aria-label="SizeXS" role="radio" aria-checked="false"></a>
                                     <div class="Size-text">4XL</div>
                             </div>
+                            
+                            <div class="bottom-buy">
+                            <div class="quantity-selector">
+                                <label for="quantity">Quantity:</label>
+                                <input type="number" id="quantity" name="quantity" min="1" max="10" value="1">
+                                <div class="space"></div>
+                            </div>
+                            <div class="customise-selector">
+                                <button class="customise-selector-button">customise</button>
+                            </div>
+                            </div>
+
+
+
+
                         </div>
                         </div>
                         </div>
                     
                     <div class="dropdown">
-                        <button class="dropbtn">Shipping </button>
-                    
-                       
+                        <p class="dropbtn">Shipping </p>     
                         <div class="dropdown-content">
                             <ul>
                                 <li>This item will ship within 5 business days</li>
@@ -115,7 +129,7 @@
                     </div>
                     
                     <div class="dropdown">
-                        <button class="dropbtn">Details </button>
+                        <p class="dropbtn">Details </p>
                         <div class="dropdown-content">
                             <ul>
                                 <li>Product ID: 14429510</li>
@@ -128,7 +142,7 @@
                       </div>
                     
                     <div class="dropdown">
-                        <button class="dropbtn">Description </button>
+                        <p class="dropbtn">Description </p>
                         <div class="dropdown-content">
                             <div class="descripton-detail">Like club, like city. Show your team's colors with pride in the Manchester United 23/24 Home Jersey. 
                                 The jersey forms a cast iron link to Manchester's enduring influence around the globe. Taking design elements from a nearby Industrial Revolution-era bridge, 
@@ -144,6 +158,9 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="space">
+
     </div>
     <section class="contact" id="contact">
         
@@ -177,17 +194,22 @@
           </div>
           <div class="col information"> 
             <div class="contact-details">
-              <div class="final">
+                <div class="final">
               <p>Stay updated on sales, new items and more</p>
               <p><button> SIGN UP AND SAVE 10%</button></p>
                 <div class="final2">
-                    <p> Follow us   </p>
+                    <p> Follow us  </p>
                 </div>
-            
-              </div>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook"></i> 
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-google"></i>
+                </div>
+                </div>
             </div>          
           </div>
-         
         </div>
       </section>
   
@@ -200,9 +222,5 @@
           </span>
         </div>
       </footer>
-  
-    <footer>
-
-    </footer>
 </body>
 </html>
