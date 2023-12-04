@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Product.Css">
+    <title>Product Management</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-child">
+            <ul>
+                <li>
+                    <a href="AdminManage.html">MainAdmin</a>
+                </li>
+                <li>
+                    <a href="Customer.html">Quản lí người dùng</a>
+                </li>
+                <li>
+                    <a href="Product.html">Quản lí sản phẩm</a>
+                </li>
+                <li>
+                    <a href="AdminOrder.html">Quản lí đơn hàng</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user" style="color: white; padding-right: 10px;"> </i>
+                    <a href="#"> Login </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="product-management">
+        <h2>Quản lí sản phẩm</h2>
+        <ul id="product-list"></ul>
+        <button onclick="showAddProductForm()">Add Product</button>
+        
+        <div id="add-product-form" class="add-product-form">
+            <h3>Add Product</h3>
+            <label for="productName">Product Name:</label>
+            <input type="text" id="productName" required>
+            <br>
+            <label for="productType">Product type:</label>
+            <input type="text" id="productType" required>
+            <br>
+            <label for="productImage">Product Image:</label>
+            <input type="file" id="productImage" accept="image/*" required>
+            <br>
+            <button onclick="addProduct()">Save</button>
+        </div>
+    </div>
+
+    <script src="Product.js"> </script>
+</body>
+</html>

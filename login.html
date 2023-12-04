@@ -31,6 +31,7 @@
 
     <div class="login-wrapper">
       <div class="login" >
+<<<<<<< HEAD
       <form action="" class="form">     
         <h2>Login</h2>
         <div class="input-group">
@@ -48,7 +49,40 @@
         <input type="submit" value="Login" class="submit-btn" />
         <div class="Register"><a href="./Register.html">Register</a></div>
       </form>
+=======
+        <form action="./index1.html" class="form">     
+          <h2>Login</h2>
+          <div class="input-group">
+            <input type="text" name="loginUser" id="loginUser" required />
+            <label for="loginUser">User Name</label>
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="loginPassword"
+              required
+            />
+            <label for="loginPassword">Password</label>
+          </div>
+          <div class="submit-wrapper">
+            <div class="Register"><a href="./Register.html">Register</a></div>
+            <input type="submit" value="Login" class="submit-btn" />
+          </div>
+        </form>
+>>>>>>> 9ce45d64985f32ccf44c115003f86836107652fb
       </div>
     </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+        const form = document.querySelector(".form");
+
+        form.addEventListener("submit", function(e) {
+
+          alert("Đăng nhập thành công!");
+          
+        });
+      });
+    </script>
   </body>
 </html>

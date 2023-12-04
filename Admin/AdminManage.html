@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Main.css">
+    <title>Admin</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-child">
+            <ul>
+                <li>
+                    <a href="AdminManage.html">MainAdmin</a>
+                </li>
+                <li>
+                    <a href="Customer.html">Quản lí người dùng</a>
+                </li>
+                <li>
+                    <a href="Product.html">Quản lí sản phẩm</a>
+                </li>
+                <li>
+                    <a href="AdminOrder.html">Quản lí đơn hàng</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="container">
+        <h2>Thống kê Kinh doanh</h2>
+        <form id="businessForm">
+            <label for="productName">Tên Sản phẩm:</label>
+            <input type="text" id="productName" required>
+
+            <label for="productType">Loại Sản phẩm:</label>
+            <select id="productType" required>
+                <option value="type1">Giày</option>
+                <option value="type2">Áo</option>
+            </select>
+
+            <label for="startDate">Ngày bắt đầu:</label>
+            <input type="date" id="startDate" required>
+
+            <label for="endDate">Ngày kết thúc:</label>
+            <input type="date" id="endDate" required>
+
+            <button type="button" onclick="submitForm()">Thực hiện thống kê</button>
+        </form>
+    </div>
+    <script src="Main.js"> </script>
+</body>
+</html>

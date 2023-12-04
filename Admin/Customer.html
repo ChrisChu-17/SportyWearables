@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Customer.Css">
+    <title>User Management</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-child">
+            <ul>
+                <li>
+                    <a href="AdminManage.html">MainAdmin</a>
+                </li>
+                <li>
+                    <a href="Customer.html">Quản lí người dùng</a>
+                </li>
+                <li>
+                    <a href="Product.html">Quản lí sản phẩm</a>
+                </li>
+                <li>
+                    <a href="AdminOrder.html">Quản lí đơn hàng</a>
+                </li>
+                <li>
+                    <i class="fa-solid fa-user" style="color: white; padding-right: 10px;"> </i>
+                    <a href="#"> Login </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+    <div id="user-management">
+        <h2>User Management</h2>
+        <ul id="user-list"></ul>
+        <button onclick="showAddUserForm()">Add User</button>
+        
+        <div id="add-user-form" class="add-user-form">
+            <h3>Add User</h3>
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+            <br>
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            <br>
+            <button onclick="addUser()">Save</button>
+        </div>
+    </div>
+
+    <script src="Customer.js"> </script>
+</body>
+</html>

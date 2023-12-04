@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="Order.Css">
+    <title>Order Management</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="navbar-child">
+            <ul>
+                <li>
+                    <a href="AdminManage.html">MainAdmin</a>
+                </li>
+                <li>
+                    <a href="Customer.html">Quản lí người dùng</a>
+                </li>
+                <li>
+                    <a href="Product.html">Quản lí sản phẩm</a>
+                </li>
+                <li>
+                    <a href="AdminOrder.html">Quản lí đơn hàng</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="order-management">
+        <h2>Order Management</h2>
+        <button onclick="showAddOrderForm()">Add Order</button>
+        <ul id="order-list"></ul>
+    </div>
+
+    <div id="order-detail" class="order-detail">
+        <h3>Order Details</h3>
+        <div id="order-detail-content"></div>
+    </div>
+
+    <div id="add-order-form" class="add-order-form">
+        <h3>Add Order</h3>
+        <label for="orderDate">Order Date:</label>
+        <input type="date" id="orderDate" required>
+
+        <button onclick="addOrder()">Save</button>
+    </div>
+
+    <script src="Order.js"> </script>
+</body>
+</html>
