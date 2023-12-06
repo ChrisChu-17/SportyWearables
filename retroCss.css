@@ -25,15 +25,16 @@ h1 {
     margin: 0px 0px;
     /* background-color: #333; */
     /* background-color: #333; */
-    color: red;
+    /* color: red; */
     height: 100%;
     padding: 10px 20px;
 }
 
 #wrapper .headline h1 a{
     text-decoration: none;
-    color: red;
+    /* color: red; */
     margin: 0 auto;
+    color: black;
 }
 
 * {
