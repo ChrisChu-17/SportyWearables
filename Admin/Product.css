@@ -95,3 +95,16 @@ color: white;
 .add-product-form {
     margin-top: 10px;
 }
+
+.user-item button {
+    margin-left: 10px;
+}
+
+.add-user-form {
+    margin-top: 10px;
+}
+
+.buttonWrapper {
+    padding-left: 450px;
+    margin-top: -20px;
+}

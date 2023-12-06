@@ -26,9 +26,24 @@
             </ul>
         </div>
     </div>
+   
     <div id="product-management">
         <h2>Quản lí sản phẩm</h2>
         <ul id="product-list"></ul>
+        <ul class="user-list" id="user-list">
+            <li>
+                ÁoMU - Áo  
+                <div class="buttonWrapper">
+                    <button> Delete </button>
+                </div>
+            </li>
+            <li>
+                GăngTayMU - Găng tay 
+                <div class="buttonWrapper">
+                    <button> Delete </button>
+                </div>
+            </li>
+        </ul>
         <button onclick="showAddProductForm()">Add Product</button>
         
         <div id="add-product-form" class="add-product-form">
@@ -40,13 +55,10 @@
             <input type="text" id="productType" required>
             <br>
             <label for="productImage">Product Image:</label>
-            <input type="file" id="productImage" accept="image/*" required>
+            <input type="file" id="productImage" accept="image/*" required >
             <br>
             <button onclick="addProduct()">Save</button>
         </div>
     </div>
-
 </body>
-</html>
-
 </html>
