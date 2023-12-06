@@ -125,7 +125,7 @@ sup{
     font-weight: 600;
     margin-left: 20.6rem;
     font-size: .875rem;
-    
+    color: rgb(115, 115, 246);
 }
 .legend{
     display: block;
@@ -189,7 +189,10 @@ sup{
 .customise-selector{
     padding-left: 40px ;
 }
-
+.customise-selector1{
+    margin-top: 12px;
+    padding: none;
+}
 .customise-selector-button{
     height: 112.2;
     width: 52;
