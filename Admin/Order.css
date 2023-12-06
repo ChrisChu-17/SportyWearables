@@ -90,7 +90,6 @@ body {
 }
 
 .order-detail {
-    display: none;
     margin-top: 10px;
     padding: 10px;
     border: 1px solid #ddd;
@@ -98,7 +97,6 @@ body {
 }
 
 .add-order-form {
-    display: none;
     margin-top: 10px;
     padding: 10px;
     border: 1px solid #ddd;
