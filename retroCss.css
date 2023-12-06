@@ -26,7 +26,16 @@ h1 {
     /* background-color: #333; */
     /* background-color: #333; */
     color: red;
+    height: 100%;
+    padding: 10px 20px;
 }
+
+#wrapper .headline h1 a{
+    text-decoration: none;
+    color: red;
+    margin: 0 auto;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -59,7 +68,7 @@ h1 {
     list-style: none;
   }
 
-  header a, footer a {
+  header a {
     /* margin-left: 240px;
     text-decoration: none;
     color: #fff; */
@@ -72,7 +81,7 @@ h1 {
     font-weight: bolder;
   }
   
-  header a:hover, footer a:hover {
+  header a:hover {
     /* color: #ddd; */
     width: ;
     background-color: #f5f6f8;
