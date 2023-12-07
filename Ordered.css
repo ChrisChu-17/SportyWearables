@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.15;
     margin: 0;
     padding: 0;
 }
@@ -10,12 +13,9 @@ header  a{
     /* background-color: #333; */
     color:rgb(0, 0, 0);
     padding: 20px;
-  
     text-align: center;
     text-decoration: none;
 }
-
-
 
 .column{
     border-top: 1px solid black;
