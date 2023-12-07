@@ -73,11 +73,6 @@ color: white;
     padding: 0;
 }
 
-.buttonWrapper{
-    padding-left: 300px;
-    margin-top: -20px;
-}
-
 .user-item {
     margin-bottom: 10px;
     border: 1px solid #ddd;
@@ -94,4 +89,13 @@ color: white;
 
 .add-user-form {
     margin-top: 10px;
+}
+
+.buttonWrapper {
+    padding-left: 450px;
+    margin-top: -20px;
+}
+
+.input {
+    text-align: center;
 }
