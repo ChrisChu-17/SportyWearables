@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 36px;
+    /* text-decoration: underline; */
+    padding: 10px 20px;
+    /* border: 1px solid #bebebe; */
+    /* background-color: #333; */
+    display: inline-block;
+}
+
+
+.headline {
+    text-align: center;
+    margin: 0px 0px;
+    /* background-color: #333; */
+    /* background-color: #333; */
+    /* color: red; */
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.headline h1 a{
+    text-decoration: none;
+    /* color: red; */
+    margin: 0 auto;
+    color: black;
+}
+
+.column{
+    margin-top: 2rem;
+    width: 70%;
+    height: max-content;
+    margin-left: 15rem;
+    margin-right: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1{
+    width: 70%;
+}
+
+.form {
+    display: flex;
+}
+
+.form-field {
+    margin-bottom: 20px;
+    /* margin: 30px 30px 30px; */
+    position: relative;
+}
+
+.form-input{
+    padding: 20px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    width: 220px;
+    height: 50px;
+    padding: 0 20px;
+    transition: 0.25s ease;
+}
+
+.form #lname {
+    margin-left: 30px;
+}
+
+.form-field #address {
+    width: 68%;
+}
+
+.form-input:focus {
+    border-color: #f5f6f8;
+}
+
+.form-label {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 21px;
+    user-select: none;
+    color: #999;
+    pointer-events: none;
+}
+
+.form-input:not(:placeholder-shown) + .form-label,
+
+.form-input:focus + .form-label {
+    transition: 0.25s ease;
+    top: 0;
+    padding: 5px;
+    display: inline-block;
+    background-color: white;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 15px 60px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    
+    margin-left: 53%;
+  }
+
+.column2{
+    width: 30%;
+}
+
+.column2 .head{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column2 .head span{
+    font-size: larger;
+    margin-top: 1rem;
+    font-weight: 600;
+}
+
+.column2 .head a{
+    color: #333;
+}
+
+.product{
+    justify-content: space-between;
+    
+}
+
+.priceDetail {
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price {
+    margin-top: 1rem;
+}
