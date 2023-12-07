@@ -44,7 +44,7 @@
                 </div>
             </li>
         </ul>
-        <button onclick="showAddProductForm()">Add Product</button>
+        <button ><i class="fa-solid fa-plus"></i> Add Product</button>
         
         <div id="add-product-form" class="add-product-form">
             <h3>Add Product</h3>
@@ -58,8 +58,20 @@
             <label for="productImage">Product Image:</label>
             <input type="file" id="productImage" accept="image/*" required >
             <br>
-            <button onclick="addProduct()">Save</button>
+            <button >Save</button>
         </div>
     </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          const buttonWrapper = document.querySelector(".buttonWrapper");
+  
+          buttonWrapper.addEventListener("submit", function(e) {
+  
+            alert("Bạn chắc chắn sẽ xóa sản phẩm này");
+            
+          });
+        });
+      </script>
 </body>
 </html>
