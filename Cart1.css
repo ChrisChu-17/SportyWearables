@@ -1,4 +1,4 @@
-ody {
+body {
     font-family: Arial, sans-serif;
     background-color: #f7f7f7;
     margin: 0;
@@ -29,6 +29,7 @@ header {
 }
 .column1{
     width: 68%;
+    
  
 }
 .column2{
@@ -53,15 +54,24 @@ header {
     justify-content: space-between;
 }
 .image{
-    height: 34rem;
-    width: 3rem;
+    padding: none;
+    width: 10rem;
+    height: 20rem;
+   
   
+}
+.image img{
+    padding-left: 10px;
+    height: 15rem;
+    width: 14rem;
+    
 }
 .space{
     width: 30px;
 }
 .product-detail{
     padding-right:none;
+    width: 60rem;
 }
 
 .product-title{
@@ -71,7 +81,7 @@ header {
     display: flex;
     align-items: center;
     border-radius: 4px;
-    border: 1px solid #ccc;
+   
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
@@ -100,7 +110,7 @@ label {
     display: flex;
     align-items: center;
     border-radius: 4px;
-    border: 1px solid #ccc;
+    
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
@@ -108,7 +118,9 @@ label {
     margin-right: 10px;
     margin-left: 4.65rem;
 }
-
+#size{
+    width: 7rem;
+}
 .select {
     padding: 8px;
     font-size: 11px;
@@ -120,14 +132,18 @@ label {
 .product-price{
     display: flex;
     justify-content: space-between;
+    padding-left: 30px;
 }
 .product-shipping{
     color: rgb(91, 156, 91);
 }
 
 .money-value{
+    padding-left: 30px;
+    padding-top: 10px;
     font-size: 2rem;
     color: #d52a1a;
+    width: 8rem;
 }
 .sr-only{
     border: 0;
@@ -154,7 +170,14 @@ p{
     padding-left: 5rem;
     font-size: larger;
 }
+.X{
+    background-color: white;
+    height: 2rem;
+    color: #000;
+    border: none;
+    width: 2rem;
 
+}
 
 
 div{
@@ -278,6 +301,7 @@ strong{
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.2rem;
+    font-style: italic;
 }
 
 .google-container {
@@ -292,6 +316,11 @@ strong{
 .google-container p{
     padding-right: 4rem;
 }
+.apply-selector-button3 img{
+    height: 1rem;
+    width: 1rem;
+    background-color: #000;
+}
 
 .apply-selector-button3 {
     background-color: #000000;
@@ -304,6 +333,8 @@ strong{
     cursor: pointer;
     font-size: 1.2rem;
     margin-bottom: 20px;
+    margin-left: 7rem;
+    
 }
 
 .contact {
@@ -349,6 +380,7 @@ strong{
 
   .icon{
     font-size: 2rem;
+    margin-left: 5rem;
    
   }
   footer {
