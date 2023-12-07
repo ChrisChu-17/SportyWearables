@@ -1,0 +1,184 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+   background: url("./images/World-Cup-jersey.webp");
+    /* background-color: #333; */
+    color:wheat;
+    padding: 20px;
+    text-align: center;
+}
+
+.column{
+    border-top: 1px solid black;
+    margin-top: 6rem;
+    width: 70%;
+    height: max-content;
+    margin-left: 15rem;
+    margin-right: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.column1{
+    width: 60%;
+}
+
+.head{
+    padding: none;
+}
+
+span{
+    margin-top: 1rem;
+    font-weight: 600;
+}
+.product{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.product-detail{
+    font-weight: 100;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.product-price{
+    margin-top: 1rem;
+}
+
+.product-bonus{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    
+}
+
+.product-shipping{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.product-pay{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+.product-total{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.column2{
+    width: 35%;
+    margin-top: 3rem;
+    height: 20rem;
+    background-color: rgb(240, 223, 200)  ;
+}
+
+.container{
+    margin-left: 20px;
+    margin-right: 5px;
+}
+
+.ordered-title{
+    color: green;
+    margin-bottom: 10px;
+    
+}
+
+.list{
+    margin-right: none;
+
+}
+
+li{
+    margin: 15px;
+}
+
+.contact {
+    background-color: rgb(239, 225, 225);
+    display: flex;
+}
+.contact .row {
+    margin: 60px 0 90px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: 30px;
+    justify-content: space-between;
+  }
+  
+  .contact .row .col {
+    padding: 0 10px;
+    
+  }
+  
+  .contact .col p {
+    margin-bottom: 10px;
+ 
+  }
+  
+  .contact .col p i {
+    color: #7a7a7a;
+    
+  }
+  
+  button{
+    background-color:  black;
+    color: white;
+    width: 310px;
+    height: 50px;
+    margin-right: 100px;
+    font-size: large;
+  }
+  
+  .contact form button:hover {
+    background: #525252;
+  }
+
+  .icon{
+    font-size: 2rem;
+    margin-left: 5rem;
+   
+  }
+  footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    padding: 20px 0;
+  }
+  
+  footer div {
+    padding: 0 10px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer{
+    background: url("./images/World-Cup-jersey.webp");
+  }
+  footer span {
+    color: #fff;
+  }
+  
+  footer a {
+    padding: 0;
+    color:white;
+    margin-right: 29px;
+  }
+
+  .space{
+    padding-top: 10%;
+}
