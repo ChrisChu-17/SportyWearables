@@ -1,14 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    line-height: 1.15;
     background-color: white;
     margin: 0;
     padding: 0;
 }
 
-header {
-   background: url("./images/World-Cup-jersey.webp");
+h1 {
+    font-weight: 900;
+    font-size: 36px;
+    /* text-decoration: underline; */
+    /* padding: 25px 20px; */
+    /* border: 1px solid #bebebe; */
     /* background-color: #333; */
-    color:white;
+    display: inline-block;
+}
+
+
+header {
+   /* background: url("./images/World-Cup-jersey.webp"); */
+    /* background-color: #333; */
+    background-color: white;
+    color:black;
     padding: 20px;
     text-align: center;
 }
@@ -160,11 +176,13 @@ sup{
     position: relative;
     background-color: #fff;
     text-align: center;
-    
+    cursor: pointer;
 }
 
 .size-selector-list:hover{
-    background-color: rgb(193, 193, 193);
+    /* background-color: rgb(193, 193, 193); */
+    background-color: black;
+    color: white;
 }
 
 .bottom-buy{
@@ -198,12 +216,17 @@ sup{
     padding: none;
 }
 .customise-selector-button{
+    cursor: pointer;
     height: 112.2;
     width: 52;
     border-radius: 3px;
     padding: 0 0.9375rem;
     border-radius: 0.64rem;
 }
+.customise-selector-button:hover {
+    opacity: 0.8;
+}
+
 .size-selector-button.unavailable {
     cursor: default;
     border-color: #dbd8d6;
