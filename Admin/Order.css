@@ -61,50 +61,38 @@ body {
     }
 }
 
-#order-management {
+.container {
     max-width: 800px;
-    margin: 50px auto;
-    background-color: white;
+    margin: 20px auto;
+    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#order-list {
+.order-list {
     list-style: none;
     padding: 0;
 }
 
-.order-item {
+.order {
+    border: 1px solid #ccc;
     margin-bottom: 10px;
-    border: 1px solid #ddd;
     padding: 10px;
     border-radius: 4px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #fff;
+    position: relative;
 }
 
-.order-item button {
-    margin-left: 10px;
+.order-status {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #ddd;
 }
 
-.order-detail {
-    display: none;
+.order-details {
     margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.add-order-form {
-    display: none;
-    margin-top: 10px;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-}
-
-.add-order-form input {
-    margin-bottom: 10px;
 }

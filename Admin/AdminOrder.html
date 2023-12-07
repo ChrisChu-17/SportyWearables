@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Order.Css">
-    <title>Order Management</title>
+    <title>Quản lý đơn hàng</title>
+    <style>
+    </style>
 </head>
 <body>
     <div class="navbar">
@@ -26,26 +28,46 @@
             </ul>
         </div>
     </div>
-
-    <div id="order-management">
-        <h2>Order Management</h2>
-        <button onclick="showAddOrderForm()">Add Order</button>
-        <ul id="order-list"></ul>
+    <div class="container">
+        <h2>Danh sách đơn hàng</h2>
+        <ul class="order-list">
+            <li class="order">
+                <div class="order-status">Chưa xử lý</div>
+                <div class="order-details">
+                    <p>Mã đơn hàng: #DH001</p>
+                    <p>Ngày đặt: 2023-12-01</p>
+                    <p>Sản phẩm: Áo MU</p>
+                    <a href="#">Xem chi tiết</a>
+                </div>
+            </li>
+            <li class="order">
+                <div class="order-status">Đã xử lý</div>
+                <div class="order-details">
+                    <p>Mã đơn hàng: #DH002</p>
+                    <p>Ngày đặt: 2023-12-02</p>
+                    <p>Sản phẩm: Giày</p>
+                    <a href="#">Xem chi tiết</a>
+                </div>
+            </li>
+            <li class="order">
+                <div class="order-status">Đã xử lý</div>
+                <div class="order-details">
+                    <p>Mã đơn hàng: #DH003</p>
+                    <p>Ngày đặt: 2023-12-02</p>
+                    <p>Sản phẩm: Găng Tay</p>
+                    <a href="#">Xem chi tiết</a>
+                </div>
+            </li>
+            <li class="order">
+                <div class="order-status">Chưa xử lý</div>
+                <div class="order-details">
+                    <p>Mã đơn hàng: #DH004</p>
+                    <p>Ngày đặt: 2023-12-03</p>
+                    <p>Sản phẩm: Áo phông</p>
+                    <a href="#">Xem chi tiết</a>
+                </div>
+            </li>
+        </ul>
     </div>
-
-    <div id="order-detail" class="order-detail">
-        <h3>Order Details</h3>
-        <div id="order-detail-content"></div>
-    </div>
-
-    <div id="add-order-form" class="add-order-form">
-        <h3>Add Order</h3>
-        <label for="orderDate">Order Date:</label>
-        <input type="date" id="orderDate" required>
-
-        <button onclick="addOrder()">Save</button>
-    </div>
-
-    <script src="Order.js"> </script>
 </body>
 </html>
