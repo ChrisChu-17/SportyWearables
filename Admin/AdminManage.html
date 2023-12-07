@@ -15,24 +15,24 @@
                     <a href="AdminManage.html">MainAdmin</a>
                 </li>
                 <li>
-                    <a href="Customer.html">Quản lí người dùng</a>
+                    <a href="Customer.html">User Management</a>
                 </li>
                 <li>
-                    <a href="Product.html">Quản lí sản phẩm</a>
+                    <a href="Product.html">Product Management</a>
                 </li>
                 <li>
-                    <a href="AdminOrder.html">Quản lí đơn hàng</a>
+                    <a href="AdminOrder.html">Order Management</a>
                 </li>
             </ul>
         </div>
     </div>
     <div class="container">
-        <h2>Thống kê Kinh doanh</h2>
+        <h2>Statistics</h2>
         <form id="businessForm">
-            <label for="productName">Tên Sản phẩm:</label>
+            <label for="productName">Product Name:</label>
             <input type="text" id="productName" required>
 
-            <label for="productType">Loại Sản phẩm:</label>
+            <label for="productType">Type:</label>
             <select id="productType" required>
                 <option value="type1">Găng tay</option>
                 <option value="type2">Áo</option>
@@ -40,14 +40,19 @@
                 <option>  </option>
             </select>
 
-            <label for="startDate">Ngày bắt đầu:</label>
+            <label for="startDate">Start Date:</label>
             <input type="date" id="startDate" required>
 
-            <label for="endDate">Ngày kết thúc:</label>
+            <label for="endDate">End Date:</label>
             <input type="date" id="endDate" required>
 
-            <button type="button">Thực hiện thống kê</button>
+            <button onclick="PerformStatistics()" type="button">Perform Statistics</button>
         </form>
     </div>
+    <script>
+        function PerformStatistics(){
+            alert("Thống kê đã được thực hiện")
+        }
+    </script>
 </body>
 </html>

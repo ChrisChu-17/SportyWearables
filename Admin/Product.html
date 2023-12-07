@@ -15,32 +15,32 @@
                     <a href="AdminManage.html">MainAdmin</a>
                 </li>
                 <li>
-                    <a href="Customer.html">Quản lí người dùng</a>
+                    <a href="Customer.html">User Management</a>
                 </li>
                 <li>
-                    <a href="Product.html">Quản lí sản phẩm</a>
+                    <a href="Product.html">Product Management</a>
                 </li>
                 <li>
-                    <a href="AdminOrder.html">Quản lí đơn hàng</a>
+                    <a href="AdminOrder.html">Order Management</a>
                 </li>
             </ul>
         </div>
     </div>
    
     <div id="product-management">
-        <h2>Quản lí sản phẩm</h2>
+        <h2>Product Management</h2>
         <ul id="product-list"></ul>
         <ul class="user-list" id="user-list">
             <li>
-                ÁoMU - Áo 
+                ÁoMU - Áo - 50$
                 <div class="buttonWrapper">
-                    <button> Delete </button>
+                    <button><i class="fa-solid fa-x"></i> Delete </button>
                 </div>
             </li>
             <li>
-                GăngTayMU - Găng tay 
+                GăngTayMU - Găng tay - 30$
                 <div class="buttonWrapper">
-                    <button> Delete </button>
+                    <button><i class="fa-solid fa-x"></i> Delete </button>
                 </div>
             </li>
         </ul>
@@ -54,24 +54,40 @@
             <label for="productType">Product type:</label>
             <input type="text" id="productType" required style="margin-left: 12px;width: 80%;">
             <br>
+            <label for="productPrice">Product Price:</label>
+            <input type="text" id="productPrice" required style="margin-left: 6px;width: 80%;" >
+            <br>
             <i class="fa-solid fa-image"></i>
             <label for="productImage">Product Image:</label>
             <input type="file" id="productImage" accept="image/*" required >
             <br>
-            <button >Save</button>
+            
+            <button onclick="saveProduct()">Save</button>
         </div>
     </div>
 
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-          const buttonWrapper = document.querySelector(".buttonWrapper");
-  
-          buttonWrapper.addEventListener("submit", function(e) {
-  
-            alert("Bạn chắc chắn sẽ xóa sản phẩm này");
-            
-          });
+        document.addEventListener('DOMContentLoaded', function () {
+                // Lấy danh sách các button delete
+                var deleteButtons = document.querySelectorAll('.buttonWrapper button:nth-child(1)');
+    
+                // Lặp qua từng button delete để thêm sự kiện click
+                deleteButtons.forEach(function (button) {
+                    button.addEventListener('click', function () {
+                        // Hiển thị cảnh báo khi click vào nút delete
+                        var confirmDelete = confirm("Bạn có chắc chắn muốn xóa không?");
+                        if (confirmDelete) {
+                            // Nếu người dùng chọn OK, thực hiện hành động xóa hoặc thực hiện logic của bạn ở đây
+                            alert("Đã xóa thành công!");
+                        }
+                    });
+                });
         });
-      </script>
+    </script>
+    <script>
+        function saveProduct(){
+            alert("Đã lưu sản phẩm thành công")
+        }
+    </script>
 </body>
 </html>

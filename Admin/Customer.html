@@ -15,13 +15,13 @@
                     <a href="AdminManage.html">MainAdmin</a>
                 </li>
                 <li>
-                    <a href="Customer.html">Quản lí người dùng</a>
+                    <a href="Customer.html">User Management</a>
                 </li>
                 <li>
-                    <a href="Product.html">Quản lí sản phẩm</a>
+                    <a href="Product.html">Product Management</a>
                 </li>
                 <li>
-                    <a href="AdminOrder.html">Quản lí đơn hàng</a>
+                    <a href="AdminOrder.html">Order Management</a>
                 </li>
             </ul>
         </div>
@@ -33,28 +33,28 @@
                 huyne - huykk99@gmail.com 
                 <div class="buttonWrapper">
                     <button> Edit </button>
-                    <button> Lock </button>
+                    <button><i class="fa-solid fa-lock"></i> Lock </button>
                 </div>
             </li>
             <li>
                 thanhne - thanhlambakabu@gmail.com 
                 <div class="buttonWrapper">
                     <button> Edit </button>
-                    <button> Lock </button>
+                    <button><i class="fa-solid fa-lock"></i> Lock </button>
                 </div>
             </li>
             <li>
                 phatne - phatkhongsuy@gmail.com 
                 <div class="buttonWrapper">
                     <button> Edit </button>
-                    <button> Lock </button>
+                    <button><i class="fa-solid fa-lock"></i> Lock </button>
                 </div>
             </li>
             <li>
                 hana - hana950@gmail.com
                 <div class="buttonWrapper">
                     <button> Edit </button>
-                    <button> Lock </button>
+                    <button><i class="fa-solid fa-lock"></i> Lock </button>
                 </div>
             </li>
         </ul>
@@ -75,28 +75,15 @@
             <label for="password">Password :</label>
             <input type="password" id="password" required style="margin-left: 8px;width: 80%;">  
             <br>
-            <button>Save</button>
+            <button onclick="saveUser()">Save</button>
             </div>
         </div>
-
+        <script> 
+              function saveUser(){
+                    
+                alert("Người dùng đã được lưu thành công!");
+                  
+                };
+        </script>
 </body>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-            // Lấy danh sách các button Lock
-            var lockButtons = document.querySelectorAll('.buttonWrapper button:nth-child(2)');
-
-            // Lặp qua từng button Lock để thêm sự kiện click
-            lockButtons.forEach(function (button) {
-                button.addEventListener('click', function () {
-                    // Hiển thị cảnh báo khi click vào nút Lock
-                    var confirmLock = confirm("Bạn có chắc chắn muốn xóa không?");
-                    if (confirmLock) {
-                        // Nếu người dùng chọn OK, thực hiện hành động xóa hoặc thực hiện logic của bạn ở đây
-                        alert("Đã xóa thành công!");
-                    }
-                });
-            });
-    });
-</script>
 </html>
