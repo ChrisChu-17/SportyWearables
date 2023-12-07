@@ -8,7 +8,7 @@ body {
 header {
    background: url("./images/World-Cup-jersey.webp");
     /* background-color: #333; */
-    color:wheat;
+    color:rgb(0, 0, 0);
     padding: 20px;
     text-align: center;
 }
@@ -81,8 +81,8 @@ span{
 .column2{
     width: 35%;
     margin-top: 3rem;
-    height: 20rem;
-    background-color: rgb(240, 223, 200)  ;
+    height: 17rem;
+    background-color: #ececec;
 }
 
 .container{
