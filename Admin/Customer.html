@@ -78,6 +78,23 @@
             <button onclick="saveUser()">Save</button>
             </div>
         </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+           
+                    var lockButtons = document.querySelectorAll('.buttonWrapper button:nth-child(2)');
+        
+                    lockButtons.forEach(function (button) {
+                        button.addEventListener('click', function () {
+                      
+                            var confirmDelete = confirm("Bạn có chắc chắn muốn khóa người dùng này không?");
+                            if (confirmDelete) {
+                     
+                                alert("Đã khóa thành công!");
+                            }
+                        });
+                    });
+            });
+        </script>
         <script> 
               function saveUser(){
                     
