@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
     color: #333;
     line-height: 1.15;
     background-color: white;
@@ -9,16 +10,33 @@ body {
     padding: 0;
 }
 
-h1 {
+#wrapper h1 {
     font-weight: 900;
     font-size: 36px;
     /* text-decoration: underline; */
-    /* padding: 25px 20px; */
+    padding: 15px 20px;
     /* border: 1px solid #bebebe; */
     /* background-color: #333; */
     display: inline-block;
 }
 
+
+
+.headline {
+    text-align: center;
+    margin: 0px 0px;
+    /* background-color: #333; */
+    /* background-color: #333; */
+    /* color: red; */
+    height: 100%;
+    padding: 10px 20px;
+}
+
+#wrapper .headline h1 a{
+    text-decoration: none;
+    margin: 0 auto;
+    color: black;
+}
 
 header {
    /* background: url("./images/World-Cup-jersey.webp"); */
@@ -383,13 +401,14 @@ li{
     justify-content: space-between;
   }
   footer{
-    background: url("./images/World-Cup-jersey.webp");
+    background-color: #333;
   }
   footer span {
     color: #fff;
   }
   
   footer a {
+    text-decoration: none;
     padding: 0;
     color:white;
     margin-right: 29px;

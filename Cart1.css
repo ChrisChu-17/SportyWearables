@@ -1,9 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.15;
     background-color: white;
     margin: 0;
     padding: 0;
 }
+
+#wrapper h1 {
+    font-weight: 900;
+    font-size: 36px;
+    /* text-decoration: underline; */
+    padding: 15px 20px;
+    /* border: 1px solid #bebebe; */
+    /* background-color: #333; */
+    display: inline-block;
+}
+
+
+
+.headline {
+    text-align: center;
+    margin: 0px 0px;
+    /* background-color: #333; */
+    /* background-color: #333; */
+    /* color: red; */
+    height: 100%;
+    padding: 10px 20px;
+}
+
+#wrapper .headline h1 a{
+    text-decoration: none;
+    margin: 0 auto;
+    color: black;
+}
+
 
 header {
    background-color: white;
@@ -205,10 +239,12 @@ p{
     color: #000;
     border: none;
     width: 2rem;
-
+    cursor: pointer;
 }
 
-
+.X:hover {
+    background-color: #d9d2d2;
+}
 div{
     display: block;
 }
@@ -271,7 +307,7 @@ div{
   }
 
 button:hover {
-    background-color: #ccc;
+    opacity: 0.8;
   }
 
 .total-container{
@@ -321,7 +357,7 @@ strong{
   margin-left: 17px;
 }
 .apply-selector-button2 {
-    background-color: #009cde;
+    background-color: #000000;
     color: #fff;
     height: 3rem;
     width: 25.8rem;
@@ -350,6 +386,7 @@ strong{
     height: 1rem;
     width: 1rem;
     background-color: #000;
+    cursor: pointer;
 }
 
 .apply-selector-button3 {
@@ -404,13 +441,16 @@ strong{
     color: white;
     width: 310px;
     height: 50px;
-    
+    margin-right: 100px;
     font-size: large;
+    cursor: pointer;
   }
   
-  .contact form button:hover {
+
+
+  /* .contact form button:hover {
     background: #525252;
-  }
+  } */
 
   .icon{
     font-size: 2rem;
@@ -433,13 +473,14 @@ strong{
     justify-content: space-between;
   }
   footer{
-    background: url("./images/World-Cup-jersey.webp");
+    background-color: #333;
   }
   footer span {
     color: #fff;
   }
   
   footer a {
+    text-decoration: none;
     padding: 0;
     color:white;
     margin-right: 29px;
