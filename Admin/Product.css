@@ -120,4 +120,8 @@ button{
         margin-bottom: 4%;
 }
 
+button:hover {
+    background-color: grey;
+}
+
 
