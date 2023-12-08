@@ -147,3 +147,37 @@ button {
 .price {
     margin-top: 1rem;
 }
+
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #000;
+    padding: 20px 0;
+  }
+  
+  footer div {
+    padding: 0 10px;
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  footer{
+    background-color: #333;
+  }
+  footer span {
+    color: white;
+  }
+  
+  footer a {
+    text-decoration: none;
+    padding: 0;
+    color: white;
+    margin-right: 29px;
+  }
+
+  .space{
+    padding-top: 7%;
+}
