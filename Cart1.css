@@ -1,9 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 body {
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.15;
     background-color: white;
     margin: 0;
     padding: 0;
 }
+
+#wrapper h1 {
+    font-weight: 900;
+    font-size: 36px;
+    /* text-decoration: underline; */
+    padding: 15px 20px;
+    /* border: 1px solid #bebebe; */
+    /* background-color: #333; */
+    display: inline-block;
+}
+
+
+
+.headline {
+    text-align: center;
+    margin: 0px 0px;
+    /* background-color: #333; */
+    /* background-color: #333; */
+    /* color: red; */
+    height: 100%;
+    padding: 10px 20px;
+}
+
+#wrapper .headline h1 a{
+    text-decoration: none;
+    margin: 0 auto;
+    color: black;
+}
+
 
 header {
    background-color: white;
