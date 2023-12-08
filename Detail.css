@@ -179,12 +179,16 @@ sup{
     cursor: pointer;
 }
 
-.size-selector-list:hover{
+.size-selector-list:hover {
     /* background-color: rgb(193, 193, 193); */
     background-color: black;
     color: white;
 }
-
+.size-selector-list:active {
+    /* background-color: rgb(193, 193, 193); */
+    background-color: black;
+    color: white;
+}
 .bottom-buy{
     display: flex;
     justify-content: space-between;

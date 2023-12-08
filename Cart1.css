@@ -1,18 +1,21 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
     margin: 0;
     padding: 0;
 }
 
 header {
-   background: url("./images/World-Cup-jersey.webp");
+   background-color: white;
     /* background-color: #333; */
-    color:wheat;
+    color:rgb(0, 0, 0);
+    margin-left: 10px;
     padding: 20px;
     text-align: center;
+    border-bottom: 2px solid black;
 }
 .head{
+    
     margin: 20px 20px;
     padding-left: 10px;
     padding-top: 10px;
@@ -25,7 +28,7 @@ header {
     flex-flow: row wrap;
     display: flex;
     justify-content: space-between;
-    margin-right: 30px;
+   
 }
 .column1{
     width: 68%;
@@ -39,6 +42,12 @@ header {
     padding-right: 0.9375rem;;
     padding-left:0.9375rem;
     box-sizing: border-box;
+    height: 37rem;
+   
+}
+
+.all{
+    text-align: center  ;
 }
 .items-container{
     margin: 20px 20px;
@@ -72,6 +81,7 @@ header {
 .product-detail{
     padding-right:none;
     width: 60rem;
+    padding-left: 20px;
 }
 
 .product-title{
@@ -106,6 +116,11 @@ label {
     padding-top: 10%;
 }
 
+.Product-list{
+    display: flex;
+   
+}
+
 .product-size {
     display: flex;
     align-items: center;
@@ -123,13 +138,13 @@ label {
     display: flex;
     align-items: center;
     border-radius: 4px;
-    
+  
     padding: 10px;
     border-radius: 5px;
     display: inline-block;
     position: relative;
-    margin-right: 10px;
-    margin-left: 4.65rem;
+    margin-right: 60px;
+ 
 }
 
 #size{
@@ -256,12 +271,12 @@ div{
   }
 
 button:hover {
-    background-color: #addcfb;
+    background-color: #ccc;
   }
 
 .total-container{
     background-color: #ebe6e6;
-    height: 24%;
+    height: 10rem;
 }
 .total-content input{
     width: 90%;
@@ -275,7 +290,7 @@ button:hover {
 
 .total-title{
     margin: 20px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
     margin-top: none;
     display: flex;
     justify-content: space-between;
@@ -306,11 +321,12 @@ strong{
   margin-left: 17px;
 }
 .apply-selector-button2 {
-    background-color: #009cde;
+    background-color: #000000;
     color: #fff;
     height: 3rem;
     width: 25.8rem;
     padding: 10px 15px;
+    margin-right: 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -323,7 +339,7 @@ strong{
     border: 1px solid #838383;
     border-top: none;
     margin-left: 20px;
-    margin-right: 18px;
+    margin-right: 20px;
   
 }
  
@@ -346,8 +362,9 @@ strong{
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.2rem;
-    margin-bottom: 20px;
-    margin-left: 7rem;
+    margin-bottom: 10px;
+    margin-left: 1rem;
+    
     
 }
 
@@ -363,7 +380,7 @@ strong{
     margin-left: 30px;
     justify-content: space-between;
   }
-  
+               
   .contact .row .col {
     padding: 0 10px;
     
@@ -371,9 +388,12 @@ strong{
   
   .contact .col p {
     margin-bottom: 10px;
- 
+
   }
-  
+
+.contact-details  p{
+    padding-left: 0;
+}
   .contact .col p i {
     color: #7a7a7a;
     
@@ -384,7 +404,7 @@ strong{
     color: white;
     width: 310px;
     height: 50px;
-    margin-right: 100px;
+    
     font-size: large;
   }
   
