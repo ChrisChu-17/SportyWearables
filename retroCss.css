@@ -283,14 +283,14 @@ header .cart-icon {
     margin-right: 40px;
 }
 .apply a :hover{
-    background-color: rgb(210, 209, 209);
-    color:rgb(0, 0, 0);
+    opacity: 0.8;
 }
 .apply button{
     width: 12.5rem;
     height: 3rem;
     background-color: black;
     color: white;
+    cursor: pointer;
 }
 .right-column{
     width: 85%;
