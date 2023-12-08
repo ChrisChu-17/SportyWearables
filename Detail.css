@@ -401,13 +401,14 @@ li{
     justify-content: space-between;
   }
   footer{
-    background: url("./images/World-Cup-jersey.webp");
+    background-color: #333;
   }
   footer span {
     color: #fff;
   }
   
   footer a {
+    text-decoration: none;
     padding: 0;
     color:white;
     margin-right: 29px;
