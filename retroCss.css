@@ -248,7 +248,7 @@ header .cart-icon {
     opacity: 0;
 }
 
-.left-column .category form .checkmark {
+.left-column .category form .checkmark {AÃ
     height: 25px;
   width: 25px;
   background-color: #eee;
@@ -264,6 +264,7 @@ header .cart-icon {
     text-align: center;
     background-color: #333;
     cursor: pointer;
+    
 }
 
 .left-column .category .category-box:hover{
@@ -276,6 +277,21 @@ header .cart-icon {
     
 }
 
+.apply{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-right: 40px;
+}
+.apply a :hover{
+    background-color: rgb(210, 209, 209);
+    color:rgb(0, 0, 0);
+}
+.apply button{
+    width: 12.5rem;
+    height: 3rem;
+    background-color: black;
+    color: white;
+}
 .right-column{
     width: 85%;
     float: right;
