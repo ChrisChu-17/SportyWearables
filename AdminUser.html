@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="Users.css">
+
+</head>
+<body>
+        <section id="menu">
+            <div class="logo">
+                <h2>SPORTY WEARABLES</h2>
+            </div>
+
+            <div class="items">
+                <li><a href="./AdminStatistics.html"><i class="fa-solid fa-house"></i> Statistics</a></li>
+                <li><a href="./AdminUser.html"><i class="fa-solid fa-user-gear"></i>User Management</a></li>
+                <li><i class="fa-solid fa-shirt"></i><a href="#">Product Management</a></li>
+                <li><i class="fa-solid fa-cart-shopping"></i><a href="#">Order Management</a></li>
+            </div>
+        </section>
+
+        <section id="interface">
+            <div class="navigation">
+                <div class="n1">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search Users Name">
+                    </div>
+                </div>  
+                <div>
+                        <label for="UsersType">Type:</label>
+                        <select id="UsersType" required>
+                            <option value="type1">All</option>
+                            <option value="type2">Lock</option>
+                            <option value="type3">Active</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" id="startDate" required>
+                </div>
+                <div>
+                    <label for="endDate">End Date:</label>
+                    <input type="date" id="endDate" required>
+                </div>
+                <div class="add-Users">
+                    <button><i class="fa-solid fa-plus"></i> Add User</button>
+                </div>
+            </div>
+            <h3 class="i-name">Users</h3>
+            <div class="board">
+                <table width="100%">
+                    <th>
+                        <tr class="td">
+                            <td><h3>ID</h3></td>
+                            <td><h3>Name User</h3></td>
+                            <td><h3>Phone Number</h3></td>
+                            <td><h3>Start Date</h3></td>
+                            <td><h3>Status</h3></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </th>
+
+                    <tb>
+                        <tr>
+                            <td class="ID">1</td>
+                        
+                            <td class="NameUser">
+                                <div class="NameUser-de">Thanh Lam</div>
+                            </td>
+
+                            <td>0909123456</td>
+
+                            <td>12/09/2023</td>
+
+                            <td class="Status"><button id="Active">Active</button></td>
+
+                            <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+
+                            <td><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID">2</td>
+                        
+                            <td class="NameUser">
+                                <div class="NameUser-de">Pakabu</div>
+                            </td>
+
+                            <td>0909950361</td>
+
+                            <td>12/09/2023</td>
+
+                            <td class="Status"><button id="Lock">Lock</button></td>
+
+                            <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+
+                            <td><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID">3</td>
+                        
+                            <td class="NameUser">
+                                <div class="NameUser-de">Tuan Phat</div>
+                            </td>
+
+                            <td>1234567890</td>
+
+                            <td>12/09/2023</td>
+
+                            <td class="Status"><button id="Active">Active</button></td>
+
+                            <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+
+                            <td><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID">4</td>
+                        
+                            <td class="NameUser">
+                                <div class="NameUser-de">Zeros</div>
+                            </td>
+
+                            <td>0903050722</td>
+
+                            <td>12/09/2023</td>
+
+                            <td class="Status"><button id="Lock">Lock</button></td>
+
+                            <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+
+                            <td><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
+                        </tr>
+                    </tb>
+                </table>   
+        </section>
+</body>
+</html>

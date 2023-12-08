@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="Overview.css">
+
+</head>
+<body>
+        <section id="menu">
+            <div class="logo">
+                <h2>SPORTY WEARABLES</h2>
+            </div>
+
+            <div class="items">
+                <li><a href="./AdminStatistics.html"><i class="fa-solid fa-house"></i> Statistics</a></li>
+                <li><a href="./AdminUser.html"><i class="fa-solid fa-user-gear"></i>User Management</a></li>
+                <li><i class="fa-solid fa-shirt"></i><a href="#">Product Management</a></li>
+                <li><i class="fa-solid fa-cart-shopping"></i><a href="#">Order Management</a></li>
+            </div>
+        </section>
+
+        <section id="interface">
+            <div class="navigation">
+                <div class="n1">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search Product">
+                    </div>
+                </div>  
+                <div>
+                        <label for="productType">Type:</label>
+                        <select id="productType" required>
+                            <option value="type1">All</option>
+                            <option value="type2">Jersey</option>
+                            <option value="type3">Retro Jersey</option>
+                            <option value="type4">Shoes</option>
+                            <option value="type5">Gear</option>
+                        </select>
+                </div>
+                <div>
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" id="startDate" required>
+                </div>
+                <div>
+                    <label for="endDate">End Date:</label>
+                    <input type="date" id="endDate" required>
+                </div>
+            </div>         
+            <h3 class="i-name">
+                Overview 
+            </h3>
+    
+            <div class="values">
+                <div class="val-box">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <h3>2,222</h3>
+                        <span>Users</span>
+                    </div>
+                </div>
+                <div class="val-box">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <div>
+                        <h3>10,562</h3>
+                        <span>Product Sell</span>
+                    </div>
+                </div>
+                <div class="val-box">
+                    <i class="fa-solid fa-money-bill-1-wave"></i>
+                    <div>
+                        <h3>5,213</h3>
+                        <span>Total Orders</span>
+                    </div>
+                </div>
+                <div class="val-box">
+                    <i class="fa-solid fa-wallet"></i>
+                    <div>
+                        <h3>£15.800.561</h3>
+                        <span>Revenue</span>
+                    </div>
+                </div>
+            </div>  
+            
+            <div class="board">
+                <table width="100%">
+                    <th>
+                        <tr class="td">
+                            <td><h3>ID</h3></td>
+                            <td><h3>Name Product</h3></td>
+                            <td><h3>Type Product</h3></td>
+                            <td><h3>Quantity</h3></td>
+                            <td><h3>Revenue</h3></td>
+                            <td></td>
+                        </tr>
+                    </th>
+                    <tb>
+                        <tr>
+                            <td class="ID">1</td>
+                            
+                            <td class="NameProduct">
+                                <img src="images/mu.avif" alt="">
+                                <div class="NameProduct-de">Manchester United adidas Home Shirt 2023-24</div>
+                            </td>
+
+                            <td>Jersey</td>
+
+                            <td class="Quantity">
+                                30
+                            </td>
+
+                            <td class="Revenue">
+                                £1440.00
+                            </td>
+
+                            <td class="View-Detail">
+                                <a href="#"><i class="fa-solid fa-eye"></i> View Detail</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID"> 
+                                    2
+                            </td>
+                            
+                            <td class="NameProduct">
+                                <img src="images/shoe1.jpg" alt="">
+                                <div class="NameProduct-de">Nike Mercurial Vapor 15 Pro</div>
+                            </td>
+
+                            <td>Shoes</td>
+
+                            <td class="Quantity">
+                                35
+                            </td>
+
+                            <td class="Revenue">
+                                £7665.00
+                            </td>
+
+                            <td class="View-Detail">
+                                <a href="#"><i class="fa-solid fa-eye"></i> View Detail</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID"> 
+                                    3
+                            </td>
+                            
+                            <td class="NameProduct">
+                                <img src="images/shoe4.webp" alt="">
+                                <div class="NameProduct-de">Nike Phantom Luna</div>
+                            </td>
+
+                            <td>Shoes</td>
+
+                            <td class="Quantity">
+                                20
+                            </td>
+
+                            <td class="Revenue">
+                               £4100.00<
+                            </td>
+
+                            <td class="View-Detail">
+                                <a href="#"><i class="fa-solid fa-eye"></i> View Detail</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID"> 
+                                    4
+                            </td>
+                            
+                            <td class="NameProduct">
+                                <img src="images/gear1.webp" alt="">
+                                <div class="NameProduct-de">Premier League Academy</div>
+                            </td>
+
+                            <td>Gear</td>
+
+                            <td class="Quantity">
+                                27
+                            </td>
+
+                            <td class="Revenue">
+                                £863.19
+                            </td>
+
+                            <td class="View-Detail">
+                                <a href="#"><i class="fa-solid fa-eye"></i> View Detail</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID"> 
+                                    5
+                            </td>
+                            
+                            <td class="NameProduct">
+                                <img src="images/gear5.webp" alt="">
+                                <div class="NameProduct-de">Nike 64oz Fuel</div>
+                            </td>
+
+                            <td>Gear</td>
+
+                            <td class="Quantity">
+                                40
+                            </td>
+
+                            <td class="Revenue">
+                                £1200.00
+                            </td>
+
+                            <td class="View-Detail">
+                                <a href="#"><i class="fa-solid fa-eye"></i> View Detail</a>
+                            </td>
+                        </tr>
+
+                         <tr>
+                            <td class="ID"> 
+                                    6
+                            </td>
+                            
+                            <td class="NameProduct">
+                                <img src="images/muRetro1.webp" alt="">
+                                <div class="NameProduct-de">Manchester United 1994 Home Shirt</div>
+                            </td>
+
+                            <td>Retro Jersey</td>
+
+                            <td class="Quantity">
+                                50
+                            </td>
+
+                            <td class="Revenue">
+                                £2750.00
+                            </td>
+
+                            <td class="View-Detail">
+                                <a href="#"><i class="fa-solid fa-eye"></i> View Detail</a>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID"> 
+                                    7
+                            </td>
+                            
+                            <td class="NameProduct">
+                                <img src="images/chelseaRetro1.avif" alt="">
+                                <div class="NameProduct-de">Chelsea Black Out Shirt</div>
+                            </td>
+
+                            <td>Retro Jersey</td>
+
+                            <td class="Quantity">
+                                100
+                            </td>
+
+                            <td class="Revenue">
+                                £4000.00
+                            </td>
+
+                            <td class="View-Detail">
+                                <a href="#"><i class="fa-solid fa-eye"></i> View Detail</a>
+                            </td>
+                        </tr>
+                    </tb>
+                </table>
+            </div>
+        </section>
+</body>
+</html>
