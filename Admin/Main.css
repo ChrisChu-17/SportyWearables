@@ -83,7 +83,7 @@ body {
         padding: 8px;
     }
 
-    button {
+.container button {
         padding: 10px;
         background-color: #333;
         color: #fff;
@@ -92,6 +92,40 @@ body {
         cursor: pointer;
     }
 
-    button:hover {
+   a button:hover {
         background-color: grey;
     }
+
+.column{
+    display: flex;
+    width: 70rem;
+    height: 18rem;
+    text-align: center;
+    margin-left: 11rem;
+    margin-top: 5rem;
+}
+
+.column1{
+    width: 22rem;
+    height: 10rem;
+    text-align: center;
+    margin: 0.6rem;
+    background-color: rgb(157, 157, 252);
+    border-radius: 4px;
+}
+.column2{
+    width: 22rem;
+    height: 10rem;
+    text-align: center;
+    margin: 0.6rem;
+    background-color: rgb(255, 255, 176);
+    border-radius: 4px;
+}
+.column3{
+    width: 22rem;
+    height: 10rem;
+    text-align: center;
+    margin: 0.6rem;
+    background-color: rgb(231, 134, 231);
+    border-radius: 4px;
+}

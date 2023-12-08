@@ -59,25 +59,8 @@
             </li>
         </ul>
         
-        <button><i class="fa-solid fa-plus"></i> Add User</button>
+        <a href="./CustomerAdd.html"><button><i class="fa-solid fa-plus"></i> Add User</button></a>
         
-        <div id="add-user-form" class="add-user-form">
-            <h3>Add User</h3>
-            <i class="fa-solid fa-user"></i>
-            <label for="username">Username :</label>
-            <input type="text" id="username" required style="margin-left: 4px;width: 80%;">
-            <br>
-            <i class="fa-solid fa-envelope"></i>
-            <label for="email">Email :</label>
-            <input type="email" id="email" required style="margin-left: 36px;width: 80%;">
-            <br>
-            <i class="fa-solid fa-lock"></i>
-            <label for="password">Password :</label>
-            <input type="password" id="password" required style="margin-left: 8px;width: 80%;">  
-            <br>
-            <button onclick="saveUser()">Save</button>
-            </div>
-        </div>
         <script>
             document.addEventListener('DOMContentLoaded', function () {
            
@@ -95,12 +78,6 @@
                     });
             });
         </script>
-        <script> 
-              function saveUser(){
-                    
-                alert("Người dùng đã được lưu thành công!");
-                  
-                };
-        </script>
+        
 </body>
 </html>

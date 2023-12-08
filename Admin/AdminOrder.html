@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <style>
     </style>
 </head>
+
 <body>
     <div class="navbar">
         <div class="navbar-child">
@@ -32,7 +34,7 @@
         <h2>Order Management</h2>
         <ul class="order-list">
             <li class="order">
-                <div class="order-status"><button>No Processed</button></div>
+                <div class="order-status" id="o1" onclick="changeStatus('o1')"><button>No Processed</button></div>
                 <div class="order-details">
                     <p>OrderID: #DH001</p>
                     <p>OrderDate: 2023-12-01</p>
@@ -41,7 +43,7 @@
                 </div>
             </li>
             <li class="order">
-                <div class="order-status"><button>Processed</button></div>
+                <div class="order-status" id="o2" onclick="changeStatus('o2')"><button>Processed</button></div>
                 <div class="order-details">
                     <p>OrderID: #DH002</p>
                     <p>OrderDate: 2023-12-02</p>
@@ -50,7 +52,7 @@
                 </div>
             </li>
             <li class="order">
-                <div class="order-status"><button>Processed</button></div>
+                <div class="order-status" id="o3" onclick="changeStatus('o3')"><button>Processed</button></div>
                 <div class="order-details">
                     <p>OrderID: #DH003</p>
                     <p>OrderDate: 2023-12-02</p>
@@ -59,7 +61,7 @@
                 </div>
             </li>
             <li class="order">
-                <div class="order-status"><button>No Processed</button></div>
+                <div class="order-status" id="o4" onclick="changeStatus('o4')"><button>No Processed</button></div>
                 <div class="order-details">
                     <p>OrderID: #DH004</p>
                     <p>OrderDate: 2023-12-03</p>
@@ -69,5 +71,16 @@
             </li>
         </ul>
     </div>
+    <script>
+        function changeStatus(idname) {
+            processBtn = document.querySelector('#' + idname + ' button');
+            if (processBtn.innerText === 'No Processed') {
+                processBtn.innerText = 'Processed';
+                alert('Xác nhận đơn hàng thành công !');
+            }
+
+        }
+    </script>
 </body>
+
 </html>

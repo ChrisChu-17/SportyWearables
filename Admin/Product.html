@@ -44,28 +44,8 @@
                 </div>
             </li>
         </ul>
-        <button ><i class="fa-solid fa-plus"></i> Add Product</button>
-        
-        <div id="add-product-form" class="add-product-form">
-            <h3>Add Product</h3>
-            <label for="productName">Product Name:</label>
-            <input type="text" id="productName" required style="width: 80%;">
-            <br>
-            <label for="productType">Product type:</label>
-            <input type="text" id="productType" required style="margin-left: 12px;width: 80%;">
-            <br>
-            <label for="productPrice">Product Price:</label>
-            <input type="text" id="productPrice" required style="margin-left: 6px;width: 80%;" >
-            <br>
-            <i class="fa-solid fa-image"></i>
-            <label for="productImage">Product Image:</label>
-            <input type="file" id="productImage" accept="image/*" required >
-            <br>
-            
-            <button onclick="saveProduct()">Save</button>
-        </div>
+        <a href="./ProductAdd.html"><button ><i class="fa-solid fa-plus"></i> Add Product</button></a>
     </div>
-
     <script>
         document.addEventListener('DOMContentLoaded', function () {
                 // Lấy danh sách các button delete
@@ -83,11 +63,6 @@
                     });
                 });
         });
-    </script>
-    <script>
-        function saveProduct(){
-            alert("Đã lưu sản phẩm thành công")
-        }
     </script>
 </body>
 </html>
