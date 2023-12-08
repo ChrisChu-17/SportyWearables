@@ -182,7 +182,13 @@ label {
 }
 
 #size{
-    width: 7rem;
+    width: 3rem;
+    height: 2rem;
+}
+#quantity{
+    width: 3rem;
+    height: 1.7rem;
+    text-align: center;
 }
 .select {
     padding: 8px;

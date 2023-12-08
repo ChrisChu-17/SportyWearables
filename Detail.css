@@ -175,6 +175,10 @@ sup{
     font-weight: 400;
     font-size: .875rem;
 }
+#XS{
+    background-color: black;
+    color: white;
+}
 .size-selector-list{
     display: flex;
     display: inline-block;
@@ -196,7 +200,49 @@ sup{
     text-align: center;
     cursor: pointer;
 }
-
+.size-selector-list1{
+    display: flex;
+    display: inline-block;
+    margin: 0.625rem 0.625rem 0 0;
+    border: 1px solid #242424;
+    font-size: .9375rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    color: white;
+    text-decoration: none;
+    line-height: 1.25rem;
+    white-space: nowrap;
+    border-radius: 0.1875rem;
+    transition: all .3s ease-out;
+    transition-property: background-color,color,border-color;
+    overflow: hidden;
+    position: relative;
+    background-color: black;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+}
+.size-selector-list2{
+    display: flex;
+    display: inline-block;
+    margin: 0.625rem 0.625rem 0 0;
+    border: 1px solid #242424;
+    font-size: .9375rem;
+    font-weight: 600;
+    padding: 0.25rem 0.75rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    line-height: 1.25rem;
+    white-space: nowrap;
+    border-radius: 0.1875rem;
+    transition: all .3s ease-out;
+    transition-property: background-color,color,border-color;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    cursor: pointer;
+}
 .size-selector-list:hover {
     /* background-color: rgb(193, 193, 193); */
     background-color: black;
