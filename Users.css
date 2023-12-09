@@ -36,10 +36,15 @@ body {
 }
 
 #menu .items li {
+    margin-bottom: 20%;
+}
+
+#menu .items li a {
     list-style: none;
     padding: 25px 0;
     transition: 0.5 ease;
     text-decoration: none;
+    font-size: 18px;
 }
 
 #menu .items li:nth-child(2){
@@ -127,9 +132,9 @@ body {
     border-radius: 8px;
 }
 
-.board h5{
+.board h4{
     font-weight: 600;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 .board .td {    
@@ -142,7 +147,7 @@ table {
 }
 
 tr {
-    border-bottom: 1px solid #eef0f3;
+    border-bottom: 12px solid #eef0f3;
 }
 
 th td {
@@ -159,7 +164,7 @@ tb tr td {
     font-weight: 3000;
 }
 
-.Edit {
+.Edit a{
     text-decoration: none;
     font-size: 14px;
     color: #554cd1;
@@ -199,4 +204,37 @@ tb tr td {
     display: inline-block;
 }
 
+@media (max-width: 769px){
+    #menu {
+    width: 270;
+    margin-left: 0;
+    position: fixed;
+    display: inline-block;
+    }
 
+    #interface {
+        width: 730;
+        margin-left: 270;
+        display: inline-block;
+    }
+    #interface .navigation {
+        width: 100%;
+    }
+    .values{
+        padding: 30px 30px 0 30px;
+        justify-content: flex-start;
+    }
+    .values .val-box{
+        padding: 16px 20px;
+        margin: 10px 25px 20px 5px;
+    }
+    .board{
+        width: 94%;
+        padding: 0;
+        overflow-x: auto;
+    }
+    table{
+        width: 100%;
+        border-collapse: collapse;
+    }
+}

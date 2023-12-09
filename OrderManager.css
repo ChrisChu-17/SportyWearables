@@ -124,51 +124,6 @@ body {
     font-weight: 700;
 }
 
-.values{
-    padding: 30px 30px 0 30px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.values .val-box{
-    background: #fff;
-    width: 235px;
-    padding: 16px 20px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.values .val-box i{
-    font-size: 25px;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
-    border-radius: 50%;
-    text-align: center;
-    color: #fff;
-    margin-right: 20px;
-}
-
-.values .val-box:nth-child(1) i{
-    background-color: rgb(85, 247, 247);
-}
-
-.values .val-box:nth-child(2) i{
-    background-color: rgb(107, 107, 41);
-}
-
-.values .val-box:nth-child(3) i{
-    background-color: rgb(194, 127, 194);
-}
-
-.values .val-box:nth-child(4) i{
-    background-color: rgb(230, 172, 181);
-}
-
 .board{
     width: 94%;
     margin: 30px 0px 30px 30px;
@@ -177,24 +132,9 @@ body {
     border-radius: 8px;
 }
 
-.board img{
-    width: 45px;
-    height: 45px;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-right: 15px;
-}
-
 .board h4{
     font-weight: 600;
     font-size: 18px;
-}
-
-.board .NameProduct {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    text-align: center;
 }
 
 .board .td {    
@@ -224,48 +164,33 @@ tb tr td {
     font-weight: 3000;
 }
 
-.View-Detail a{
+.board .Status #Processed{
+    border: none;
+    background-color: #27ae60;
+    cursor: pointer;
+    color: #fff;
+    padding: 3px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.board .Status #NoProcessed{
+    border: none;
+    background-color: rgb(240, 186, 85);
+    cursor: pointer;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.Edit button{
+    cursor: pointer;
+    border: none;
     text-decoration: none;
     font-size: 14px;
     color: #554cd1;
     font-weight: 600;
-}
-
-.View-Detail i{
-    margin-right: 8px;
-}
-
-@media (max-width: 769px){
-    #menu {
-    width: 270;
-    margin-left: 0;
-    position: fixed;
-    display: inline-block;
-    }
-
-    #interface {
-        width: 730;
-        margin-left: 270;
-        display: inline-block;
-    }
-    #interface .navigation {
-        width: 100%;
-    }
-    .values{
-        padding: 30px 30px 0 30px;
-        justify-content: flex-start;
-    }
-    .values .val-box{
-        padding: 16px 20px;
-        margin: 10px 25px 20px 5px;
-    }
-    .board{
-        width: 94%;
-        padding: 0;
-        overflow-x: auto;
-    }
-    table{
-        width: 100%;
-        border-collapse: collapse;
-    }
 }
