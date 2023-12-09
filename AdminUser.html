@@ -18,7 +18,7 @@
             <div class="items">
                 <li><a href="./AdminStatistics.html"><i class="fa-solid fa-house"></i> Statistics</a></li>
                 <li><a href="./AdminUser.html"><i class="fa-solid fa-user-gear"></i>User Management</a></li>
-                <li><i class="fa-solid fa-shirt"></i><a href="#">Product Management</a></li>
+                <li><a href="./AdminProduct.html"><i class="fa-solid fa-shirt"></i>Product Management</a></li>
                 <li><i class="fa-solid fa-cart-shopping"></i><a href="#">Order Management</a></li>
             </div>
         </section>
@@ -48,7 +48,7 @@
                     <input type="date" id="endDate" required>
                 </div>
                 <div class="add-Users">
-                    <button><i class="fa-solid fa-plus"></i> Add User</button>
+                    <a href="./AdminManager.html"><button><i class="fa-solid fa-plus"></i> Add User</button></a>
                 </div>
             </div>
             <h3 class="i-name">Users</h3>
@@ -56,12 +56,11 @@
                 <table width="100%">
                     <th>
                         <tr class="td">
-                            <td><h3>ID</h3></td>
-                            <td><h3>Name User</h3></td>
-                            <td><h3>Phone Number</h3></td>
-                            <td><h3>Start Date</h3></td>
-                            <td><h3>Status</h3></td>
-                            <td></td>
+                            <td><h4>ID</h4></td>
+                            <td><h4>User Name</h4></td>
+                            <td><h4>Phone Number</h4></td>
+                            <td><h4>Start Date</h4></td>
+                            <td><h4>Status</h4></td>
                             <td></td>
                         </tr>
                     </th>
@@ -78,13 +77,12 @@
 
                             <td>12/09/2023</td>
 
-                            <td class="Status"><button id="Active">Active</button></td>
+                            <td class="Status"><button onclick="changeLock()" id="Active">Active</button></td>
 
                             <td class="Edit">
                                 <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                             </td>
 
-                            <td><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
                         </tr>
 
                         <tr>
@@ -104,7 +102,6 @@
                                 <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                             </td>
 
-                            <td><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
                         </tr>
 
                         <tr>
@@ -124,7 +121,6 @@
                                 <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                             </td>
 
-                            <td><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
                         </tr>
 
                         <tr>
@@ -144,10 +140,102 @@
                                 <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                             </td>
 
-                            <td><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID">5</td>
+                        
+                            <td class="NameUser">
+                                <div class="NameUser-de">Faker</div>
+                            </td>
+
+                            <td>0908334567</td>
+
+                            <td>12/09/2023</td>
+
+                            <td class="Status"><button id="Active">Active</button></td>
+
+                            <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">6</td>
+                        
+                            <td class="NameUser">
+                                <div class="NameUser-de">hkaye13</div>
+                            </td>
+
+                            <td>1235467412</td>
+
+                            <td>12/09/2023</td>
+
+                            <td class="Status"><button id="Lock">Lock</button></td>
+
+                            <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">7</td>
+                        
+                            <td class="NameUser">
+                                <div class="NameUser-de">BaBy</div>
+                            </td>
+
+                            <td>0950361012</td>
+
+                            <td>12/09/2023</td>
+
+                            <td class="Status"><button id="Active">Active</button></td>
+
+                            <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+
                         </tr>
                     </tb>
                 </table>   
         </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+           
+                    const lockButtons = document.querySelectorAll('.Status #Active');
+        
+                    lockButtons.forEach(function (button) {
+                        button.addEventListener('click', function () {
+                      
+                            var confirmDelete = confirm("Bạn có chắc chắn muốn khóa người dùng này không?");
+                            if (confirmDelete) {
+                     
+                                alert("Đã khóa thành công!");
+                            }
+                        });
+                    });
+            });
+        </script>
+
+        <script>
+             document.addEventListener('DOMContentLoaded', function () {
+   
+                    const unlockButtons = document.querySelectorAll('.Status #Lock');
+
+                    unlockButtons.forEach(function (button) {
+                    button.addEventListener('click', function () {
+              
+                            var confirmDelete = confirm("Bạn có chắc chắn muốn gỡ khóa người dùng này không?");
+                         if (confirmDelete) {
+             
+                        alert("Đã gỡ khóa thành công!");
+                          }
+                        });
+                    });
+             });
+        </script>
+       
 </body>
 </html>

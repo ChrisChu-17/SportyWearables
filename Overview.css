@@ -180,7 +180,7 @@ body {
     margin-right: 15px;
 }
 
-.board h5{
+.board h4{
     font-weight: 600;
     font-size: 14px;
 }
@@ -202,7 +202,7 @@ table {
 }
 
 tr {
-    border-bottom: 1px solid #eef0f3;
+    border-bottom: 20px solid #eef0f3;
 }
 
 th td {

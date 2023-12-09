@@ -92,7 +92,7 @@ body {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 10px 14px;
+    padding: 10px 20px;
     border: 1px solid #d7dbe6;
     border-radius: 4px;
 }
@@ -127,9 +127,24 @@ body {
     border-radius: 8px;
 }
 
-.board h5{
+.board img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.board h4{
     font-weight: 600;
     font-size: 14px;
+}
+
+.board .NameProduct {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
 }
 
 .board .td {    
@@ -159,44 +174,24 @@ tb tr td {
     font-weight: 3000;
 }
 
-.Edit {
+.Edit1 {
     text-decoration: none;
     font-size: 14px;
     color: #554cd1;
     font-weight: 600;
 }
 
-.add-Users button{
-    background-color: #444444;
-    color: white;
-    padding: 5px 22px;
-    border: none;
-    border-radius: 2px;
-    cursor: pointer;
-    font-size: 12px;
-    margin-bottom: 4%;
+.Edit1 i{
+    margin-right: 8px;
 }
 
-.board .Status #Active{
-    border: none;
-    background-color: #27ae60;
-    cursor: pointer;
-    color: #fff;
-    padding: 3px 14px;
-    border-radius: 5px;
-    font-size: 16px;
-    display: inline-block;
+.Delete1{
+    text-decoration: none;
+    font-size: 14px;
+    color: #554cd1;
+    font-weight: 600;
 }
 
-.board .Status #Lock{
-    border: none;
-    background-color: #701717;
-    cursor: pointer;
-    color: #fff;
-    padding: 3px 21px;
-    border-radius: 5px;
-    font-size: 16px;
-    display: inline-block;
+.Delete1 i{ 
+    margin-right: 8px;
 }
-
-

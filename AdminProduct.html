@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="Product.css">
+
+</head>
+<body>
+        <section id="menu">
+            <div class="logo">
+                <h2>SPORTY WEARABLES</h2>
+            </div>
+
+            <div class="items">
+                <li><a href="./AdminStatistics.html"><i class="fa-solid fa-house"></i> Statistics</a></li>
+                <li><a href="./AdminUser.html"><i class="fa-solid fa-user-gear"></i>User Management</a></li>
+                <li><a href="./AdminProduct.html"><i class="fa-solid fa-shirt"></i>Product Management</a></li>
+                <li><i class="fa-solid fa-cart-shopping"></i><a href="#">Order Management</a></li>
+            </div>
+        </section>
+
+        <section id="interface">
+            <div class="navigation">
+                <div class="n1">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search Product">
+                    </div>
+                </div>  
+                <div>
+                        <label for="productType">Type:</label>
+                        <select id="productType" required>
+                            <option value="type1">All</option>
+                            <option value="type2">Jersey</option>
+                            <option value="type3">Retro Jersey</option>
+                            <option value="type4">Shoes</option>
+                            <option value="type5">Gear</option>
+                        </select>
+                </div>
+            </div>         
+            <h3 class="i-name"> Product</h3>
+            </div>  
+            
+            <div class="board">
+                <table width="100%">
+                    <th>
+                        <tr class="td">
+                            <td><h4>ID</h4></td>
+                            <td><h4>Product Name</h4></td>
+                            <td><h4>Product Type </h4></td>
+                            <td><h4>Price</h4></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </th>
+                    <tb>
+                        <tr>
+                            <td class="ID">1</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/mu.avif" alt="">
+                                    <div class="NameProduct-de">Manchester United adidas Home Shirt 2023-24</div>
+                                </div>
+                                <td>Jersey</td>
+
+                                <td class="Price">
+                                    £48.00
+                                </td>
+
+                                <td class="Edit1">
+                                    <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                                </td>
+                               
+                               <td class="Delete1"><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
+    
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID">2</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/muRetro2.webp" alt="">
+                                    <div class="NameProduct-de">Manchester United 1996 Home Shirt</div>
+                                </div>
+                                <td>Retro Jersey</td>
+
+                                <td class="Price">
+                                    £55.00
+                                </td>
+
+                                <td class="Edit1">
+                                    <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                                </td>
+                               
+                               <td class="Delete1"><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
+    
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID">3</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/muRetro3.webp" alt="">
+                                    <div class="NameProduct-de">Manchester United 1999 Shirt</div>
+                                </div>
+                                <td>Retro Jersey</td>
+
+                                <td class="Price">
+                                    £55.00
+                                </td>
+
+                                <td class="Edit1">
+                                    <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                                </td>
+                               
+                               <td class="Delete1"><a href="#"><i class="fa-solid fa-trash-can"></i> Delete</a></td>
+    
+                            </td>
+                        </tr>
+                    </tb>
+                </table>
+            </div>
+        </section>
+</body>
+</html>
