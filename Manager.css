@@ -44,6 +44,8 @@ body {
     transition: 0.5 ease;
     text-decoration: none;
     font-size: 18px;
+    color: white;
+    
 }
 
 #menu .items li:nth-child(2){
@@ -67,7 +69,8 @@ body {
 
 #menu .items li:hover i,
 #menu .items li:hover a {
-    color: #f3f4f6;
+    color: #ffffff;
+    
 }
 
 #menu .items li i{
