@@ -206,11 +206,15 @@ tb tr td {
     display: inline-block;
 }
 
-.Edit button{
+.View-Detail button{
     cursor: pointer;
     border: none;
     text-decoration: none;
     font-size: 14px;
     color: #554cd1;
     font-weight: 600;
+}
+
+.View-Detail i{
+    margin-right: 8px;
 }

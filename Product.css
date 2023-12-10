@@ -211,6 +211,13 @@ tb tr td {
     font-weight: 3000;
 }
 
+.Edit a{
+    text-decoration: none;
+    font-size: 14px;
+    color: #554cd1;
+    font-weight: 600;
+}
+
 .Delete1 button{
         background-color: #444444;
         color: white;
