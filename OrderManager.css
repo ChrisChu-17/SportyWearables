@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,13 +10,14 @@
 
 body {
     width: 100%;
-    background: rgb(189, 188, 188);
+    background: white;
     position: relative;
     display: flex;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #menu {
-    background-color: black;
+    background-color: #333;
     width: 300px;
     height: 100%;
     position: fixed;
@@ -45,6 +46,7 @@ body {
     transition: 0.5 ease;
     text-decoration: none;
     font-size: 18px;
+    color: white;
 }
 
 #menu .items li:nth-child(4){
@@ -113,6 +115,26 @@ body {
 
 }
 
+#interface .navigation #UsersType {
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .startDate #startDate {
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+#interface .navigation .endDate #endDate {
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
 #interface .navigation .search:hover i {
     color: rgb(134, 141, 151);
 }
@@ -128,8 +150,9 @@ body {
     width: 94%;
     margin: 30px 0px 30px 30px;
     overflow: auto;
-    background: #fff;
+    background: #eef0f3;
     border-radius: 8px;
+    padding-left: 25px;
 }
 
 .board h4{
@@ -137,9 +160,6 @@ body {
     font-size: 18px;
 }
 
-.board .td {    
-    background-color: antiquewhite;
-}
 
 table {
     border-collapse: collapse;

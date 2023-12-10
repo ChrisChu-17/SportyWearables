@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -10,13 +10,15 @@
 
 body {
     width: 100%;
-    background: rgb(189, 188, 188);
+    /* background: rgb(189, 188, 188); */
+    background-color: white;
     position: relative;
     display: flex;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #menu {
-    background-color: black;
+    background-color: #333;
     width: 300px;
     height: 100%;
     position: fixed;
@@ -45,6 +47,7 @@ body {
     transition: 0.5 ease;
     text-decoration: none;
     font-size: 18px;
+    color: white;
 }
 
 #menu .items li:nth-child(3){
@@ -100,6 +103,7 @@ body {
     padding: 10px 20px;
     border: 1px solid #d7dbe6;
     border-radius: 4px;
+    padding-right: 200px;
 }
 
 #interface .navigation .search i{
@@ -117,15 +121,31 @@ body {
     color: rgb(134, 141, 151);
 }
 
+#interface .navigation .type{
+    margin-left: 250px;
+}
+
+#interface .navigation #productType {
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
 .add-Users button{
     background-color: #444444;
     color: white;
-    padding: 5px 22px;
+    padding: 10px 10px;
     border: none;
-    border-radius: 2px;
+    border-radius: 4px;
     cursor: pointer;
-    font-size: 12px;
-    margin-bottom: 4%;
+    font-size: 14px;
+    margin-bottom: 3%;
+    margin-right: 10px;
+}
+
+.add-Users button:hover {
+    opacity: 0.9    ;
 }
 
 .i-name{
@@ -139,8 +159,9 @@ body {
     width: 94%;
     margin: 30px 0px 30px 30px;
     overflow: auto;
-    background: #fff;
+    background-color:  #eef0f3;
     border-radius: 8px;
+    padding-left: 25px;
 }
 
 .board img{
@@ -164,7 +185,7 @@ body {
 }
 
 .board .td {    
-    background-color: antiquewhite;
+    /* background-color: antiquewhite; */
 }
 
 table {
@@ -195,7 +216,7 @@ tb tr td {
         color: white;
         padding: 5px 22px;
         border: none;
-        border-radius: 2px;
+        border-radius: 4px;
         cursor: pointer;
         font-size: 12px;
         margin-bottom: 4%;
@@ -204,6 +225,11 @@ tb tr td {
 .Delete1 i{ 
     margin-right: 8px;
 }
+
+.Delete1 button:hover {
+    opacity: 0.9;
+}
+
 
 @media (max-width: 769px){
     #menu {
