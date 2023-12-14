@@ -200,6 +200,13 @@ sup{
     text-align: center;
     cursor: pointer;
 }
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+a:hover{
+    color: white;
+}
 .size-selector-list1{
     display: flex;
     display: inline-block;
@@ -245,7 +252,7 @@ sup{
 }
 .size-selector-list:hover {
     /* background-color: rgb(193, 193, 193); */
-    background-color: black;
+    background-color: rgb(33, 32, 32);
     color: white;
 }
 .size-selector-list:active {
