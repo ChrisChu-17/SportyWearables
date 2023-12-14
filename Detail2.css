@@ -195,6 +195,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     text-align: center;
+    margin-bottom: 10%;
 }
 
 table {
@@ -212,11 +213,12 @@ tr {
     font-weight: 3000;
     text-align: center;
     border-bottom: 10%;
+ 
 
 }
 
-tb tr td {
-    padding: 10px 15px;
+.board tbody td {
+    text-align: center;
     font-weight: 3000;
 }
 
