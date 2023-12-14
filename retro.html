@@ -18,7 +18,7 @@
         <div class="img-wrapper">
             <header>
                 <nav class="navbar">
-                    <i class="fas fa-shopping-cart cart-icon"></i>
+                    <i class="fas fa-shopping-cart cart-icon" onclick="Redirect();"></i>
                     <ul class="all-links">
                       <li><a href="./mu.html">Football Jersey</a></li>
                       <li><a href="./shoes.html">Football Shoes</a></li>
@@ -115,7 +115,11 @@
                         </label>
                     </form>
                     <div class="apply">
+<<<<<<< HEAD
                         <a href="mu.html"><button>Apply</button></a>
+=======
+                        <a href="./searchResult.html"><button>Search</button></a>
+>>>>>>> 66306cfe7c0ef7c0d89e2676c72badb36c472570
                     </div>
                 </div>
                 </div> 
@@ -216,5 +220,15 @@
                 </ul>
             </div>
         </div>
+       
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const cartshow = document.querySelector(".cart-icon");
+                cartshow.addEventListener("click", function Redirect() {
+                    window.location = "Cart.html";
+                })
+            });
+        </script>
+        
 </body>
 </html>

@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    background: rgb(189, 188, 188);
+    position: relative;
+    display: flex;
+}
+
+#menu {
+    background-color: black;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li {
+    margin-bottom: 20%;
+}
+
+#menu .items li a {
+    list-style: none;
+    padding: 25px 0;
+    transition: 0.5 ease;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    
+}
+
+#menu .items li:nth-child(2){
+    border-left: 4px solid #fff;
+}
+
+#menu .items li:hover {
+    background-color: #253047;
+    cursor: pointer;
+}
+
+#menu .items li i{
+    color: rgb(134, 141, 151);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i,
+#menu .items li:hover a {
+    color: #ffffff;
+    
+}
+
+#menu .items li i{
+    text-decoration: none;
+    color: rgb(134, 141, 151);
+    font-weight: 300px;
+    transition: 0.5s ease;
+}
+
+#interface {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+
+#interface .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #333;
+}
+
+.i-name{
+    color: #020202;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.add-Users {
+    max-width: 500px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-Users button{
+    background-color: #444444;
+    color: white;
+    padding: 5px 22px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 4%;
+}
+
+.add-user-form input{
+    margin-bottom: 5%;
+}

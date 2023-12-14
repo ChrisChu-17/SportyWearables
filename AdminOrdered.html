@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="OrderManager.css">
+
+</head>
+<body>
+        <section id="menu">
+            <div class="logo">
+                <h2>SPORTY WEARABLES</h2>
+            </div>
+
+            <div class="items">
+                <li><a href="./AdminStatistics.html"><i class="fa-solid fa-house"></i> Statistics</a></li>
+                <li><a href="./AdminUser.html"><i class="fa-solid fa-user-gear"></i>User Management</a></li>
+                <li><a href="./AdminProduct.html"><i class="fa-solid fa-shirt"></i>Product Management</a></li>
+                <li><a href="./AdminOrdered.html"><i class="fa-solid fa-cart-shopping"></i>Order Management</a></li>
+            </div>
+        </section>
+
+        <section id="interface">
+            <div class="navigation">
+                <div class="n1">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search ID, Phone Number ">
+                    </div>
+                </div>  
+                <div>
+                        <label for="UsersType"></label>
+                        <select id="UsersType" required>
+                            <option value="type1">All</option>
+                            <option value="type2">Processed</option>
+                            <option value="type3">No Processed</option>
+                        </select>
+                </div>
+                <div class="startDate">
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" id="startDate" required>
+                </div>
+                <div class="endDate">
+                    <label for="endDate">End Date:</label>
+                    <input type="date" id="endDate" required>
+                </div>
+            </div>
+
+            <h3 class="i-name">Order</h3>
+            <div class="board">
+                <table width="100%">
+                    <th>
+                        <tr class="td">
+                            <td><h4>ID</h4></td>
+                            <td><h4>Name User</h4></td>
+                            <td><h4>Phone Number</h4></td>
+                            <td><h4>Order Date</h4></td>
+                            <td><h4>Order Total</h4></td>
+                            <td><h4>Status</h4></td>
+                            <td></td>
+                        </tr>
+                    </th>
+                    <tb>
+                        <tr>
+                            <td>a01</td>
+                            <td>Faker</td>
+                            <td>0908334567</td>
+                            <td>10/12/2023</td>
+                            <td>£6000.00</td>
+                            <td class="Status"><button id="Processed">Processed</button></td>
+                            <td class="View-Detail"><button><i class="fa-solid fa-eye"></i> View Detail</button></td>
+                        </tr>
+                      
+                        <tr>
+                            <td>a02</td>
+                            <td>Thanh Lam</td>
+                            <td>0909123456</td>
+                            <td>8/12/2023</td>
+                            <td>£1200.00</td>
+                            <td class="Status"><button id="Processed">Processed</button></td>
+                            <td class="View-Detail"><button><i class="fa-solid fa-eye"></i> View Detail</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>a03</td>
+                            <td>Tuan Phat</td>
+                            <td>1234567890</td>
+                            <td>13/12/2023</td>
+                            <td>£5810.00</td>
+                            <td class="Status"><button id="NoProcessed">No Processed</button></td>
+                            <td class="View-Detail"><button><i class="fa-solid fa-eye"></i> View Detail</button></td>
+                        </tr>
+
+                        <tr>
+                            <td>a04</td>
+                            <td>Tuan Phat</td>
+                            <td>1234567890</td>
+                            <td>14/12/2023</td>
+                            <td>£1300.00</td>
+                            <td class="Status"><button id="NoProcessed">No Processed</button></td>
+                            <td class="View-Detail"><button><i class="fa-solid fa-eye"></i> View Detail</button></td>
+                        </tr>
+                    </tb>
+                </table>    
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+           
+                    const ProcessedButtons = document.querySelectorAll('.board .Status #NoProcessed');
+        
+                    ProcessedButtons.forEach(function (button) {
+                        button.addEventListener('click', function () {
+                      
+                            var confirmDelete = confirm("Đã xử lý xong đơn hàng");
+                            if (confirmDelete) {
+                     
+                                alert("xử lý thành công!");
+                            }
+                        });
+                    });
+            });
+        </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <title>Manager</title>
+    <link rel="stylesheet" href="Manager.css">
+
+</head>
+<body>
+        <section id="menu">
+            <div class="logo">
+                <h2>SPORTY WEARABLES</h2>
+            </div>
+
+            <div class="items">
+                <li><a href="./AdminStatistics.html"><i class="fa-solid fa-house"></i> Statistics</a></li>
+                <li><a href="./AdminUser.html"><i class="fa-solid fa-user-gear"></i>User Management</a></li>
+                <li><a href="./AdminProduct.html"><i class="fa-solid fa-shirt"></i>Product Management</a></li>
+                <li><a href="./AdminOrdered.html"><i class="fa-solid fa-cart-shopping"></i>Order Management</a></li>
+            </div>
+        </section>
+    <section id="interface">
+        <div class="navigation"></div>
+        <h3 class="i-name">Add User</h3>
+        <div class="add-Users">
+            <div id="add-user-form" class="add-user-form">
+                <i class="fa-solid fa-user"></i>
+                <label for="username">Username :</label>
+                <input type="text" id="username" required style="margin-left: 4px;width: 70%;">
+                <br>
+                <i class="fa-solid fa-envelope"></i>
+                <label for="email">Email :</label>
+                <input type="email" id="email" required style="margin-left: 40px;width: 70%;">
+                <br>
+                <i class="fa-solid fa-lock"></i>
+                <label for="password">Password :</label>
+                <input type="password" id="password" required style="margin-left: 8px;width: 70%;">  
+                <br>
+                <a href="./AdminUser.html"><button onclick="saveUser()">Save</button></a>
+            </div>
+        </div>
+    </section>
+    <script> 
+        function saveUser(){
+      
+        alert("Người dùng đã được lưu thành công!");
+    
+         };
+    </script>
+</body>
+</html>

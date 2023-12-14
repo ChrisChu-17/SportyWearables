@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="Product.css">
+
+</head>
+<body>
+        <section id="menu">
+            <div class="logo">
+                <h2>SPORTY WEARABLES</h2>
+            </div>
+
+            <div class="items">
+                <li><a href="./AdminStatistics.html"><i class="fa-solid fa-house"></i> Statistics</a></li>
+                <li><a href="./AdminUser.html"><i class="fa-solid fa-user-gear"></i>User Management</a></li>
+                <li><a href="./AdminProduct.html"><i class="fa-solid fa-shirt"></i>Product Management</a></li>
+                <li><a href="./AdminOrdered.html"><i class="fa-solid fa-cart-shopping"></i>Order Management</a></li>
+            </div>
+        </section>
+
+        <section id="interface">
+            <div class="navigation">
+                <div class="n1">
+                    <div class="search">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        <input type="text" placeholder="Search Product">
+                    </div>
+                </div>  
+
+                <div class="type">
+                        <label for="productType">Type:</label>
+                        <select id="productType" required>
+                            <option value="type1">All</option>
+                            <option value="type2">Jersey</option>
+                            <option value="type3">Retro Jersey</option>
+                            <option value="type4">Shoes</option>
+                            <option value="type5">Gear</option>
+                        </select>
+                </div>
+
+                <div class="add-Users">
+                    <a href="./AdminaddProduct.html"><button><i class="fa-solid fa-plus"></i> Add Product</button></a>
+                </div>
+            </div>
+            </div>         
+            <h3 class="i-name"> Product</h3>
+            </div>  
+            
+            <div class="board">
+                <table width="100%">
+                    <th>
+                        <tr class="td">
+                            <td><h4>ID</h4></td>
+                            <td><h4>Product Name</h4></td>
+                            <td><h4>Product Type </h4></td>
+                            <td><h4>Price</h4></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </th>
+                    <tb>
+                        <tr>
+                            <td class="ID">1</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/mu.avif" alt="">
+                                    <div class="NameProduct-de">Manchester United adidas Home Shirt 2023-24</div>
+                                </div>
+                            </td>
+
+                                <td>Jersey</td>
+
+                                <td class="Price">
+                                    £48.00
+                                </td>
+
+
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a></td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+    
+                        </tr>
+
+                        <tr>
+                            <td class="ID">2</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/muRetro2.webp" alt="">
+                                    <div class="NameProduct-de">Manchester United 1996 Home Shirt</div>
+                                </div>
+                            </td>
+                                <td>Retro Jersey</td>
+
+                                <td class="Price">
+                                    £55.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+    
+                        </tr>
+
+                        <tr>
+                            <td class="ID">3</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/muRetro3.avif" alt="">
+                                    <div class="NameProduct-de">Manchester United 1999 Shirt</div>
+                                </div>
+                            </td>
+                                <td>Retro Jersey</td>
+
+                                <td class="Price">
+                                    £55.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+                        </tr>
+
+                        <tr>
+                            <td class="ID">4</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/muRetro4.webp" alt="">
+                                    <div class="NameProduct-de">Manchester United 1999 FA Cup Semi-Final Shirt</div>
+                                </div>
+                            </td>    
+                                <td>Retro Jersey</td>
+
+                                <td class="Price">
+                                    £48.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">5</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/chelseaRetro1.avif" alt="">
+                                    <div class="NameProduct-de">Chelsea Black Out Shirt</div>
+                                </div>
+                            </td>    
+                                <td>Retro Jersey</td>
+
+                                <td class="Price">
+                                    £44.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">6</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/chelseaRetro2.webp" alt="">
+                                    <div class="NameProduct-de">Chelsea 2000 Home Shirt</div>
+                                </div>
+                            </td>    
+                                <td>Retro Jersey</td>
+
+                                <td class="Price">
+                                    £36.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">7</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/mu.avif" alt="">
+                                    <div class="NameProduct-de">Manchester United adidas Home Shirt 2023-24</div>
+                                </div>
+                            </td>    
+                                <td>Jersey</td>
+
+                                <td class="Price">
+                                    £48.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">8</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/mu2.avif" alt="">
+                                    <div class="NameProduct-de">Manchester United adidas Away Shirt 2023-24</div>
+                                </div>
+                            </td>    
+                                <td>Jersey</td>
+
+                                <td class="Price">
+                                    £56.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">9</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/ao3.avif" alt="">
+                                    <div class="NameProduct-de">Manchester United adidas Third Shirt 2023-24</div>
+                                </div>
+                            </td>    
+                                <td>Jersey</td>
+
+                                <td class="Price">
+                                    £56.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">10</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/shoe1.jpg" alt="">
+                                    <div class="NameProduct-de">Nike Mercurial Vapor 15 Pro</div>
+                                </div>
+                            </td>    
+                                <td>Shoes</td>
+
+                                <td class="Price">
+                                    £219.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">11</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/shoe2.jpg" alt="">
+                                    <div class="NameProduct-de">Nike Mercurial Vapor 15 Pro</div>
+                                </div>
+                            </td>    
+                                <td>Shoes</td>
+
+                                <td class="Price">
+                                    £219.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">12</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/shoe3.webp" alt="">
+                                    <div class="NameProduct-de">Nike Mercurial Vapor 15 Pro Elite</div>
+                                </div>
+                            </td>    
+                                <td>Shoes</td>
+
+                                <td class="Price">
+                                    £349.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">13</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/shoe4.webp" alt="">
+                                    <div class="NameProduct-de">Nike Phantom Luna</div>
+                                </div>
+                            </td>    
+                                <td>Shoes</td>
+
+                                <td class="Price">
+                                    £205.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">14</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/shoe5.jpg" alt="">
+                                    <div class="NameProduct-de">Nike Phantom Luna FG By You</div>
+                                </div>
+                            </td>    
+                                <td>Shoes</td>
+
+                                <td class="Price">
+                                    £239.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">15</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/shoe6.jpg" alt="">
+                                    <div class="NameProduct-de">Nike Mercurial Vapor 15 Elite By You</div>
+                                </div>
+                            </td>    
+                                <td>Shoes</td>
+
+                                <td class="Price">
+                                    £419.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">16</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/gear1.webp" alt="">
+                                    <div class="NameProduct-de">Premier League Academy</div>
+                                </div>
+                            </td>    
+                                <td>Gear</td>
+
+                                <td class="Price">
+                                    £31.97
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">17</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/gear2.webp" alt="">
+                                    <div class="NameProduct-de">Nike Mercurial Lite</div>
+                                </div>
+                            </td>    
+                                <td>Gear</td>
+
+                                <td class="Price">
+                                    £24.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">18</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/gear3.webp" alt="">
+                                    <div class="NameProduct-de">Premier League Academy</div>
+                                </div>
+                            </td>    
+                                <td>Gear</td>
+
+                                <td class="Price">
+                                    £37.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">19</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/gear7.webp" alt="">
+                                    <div class="NameProduct-de">Manchester United adidas Home Shirt 2023-24</div>
+                                </div>
+                            </td>    
+                                <td>Gear</td>
+
+                                <td class="Price">
+                                    £48.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">20</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/gear5.webp" alt="">
+                                    <div class="NameProduct-de">Nike 64oz Fuel</div>
+                                </div>
+                            </td>    
+                                <td>Gear</td>
+
+                                <td class="Price">
+                                    £30.00
+                                </td>
+
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+
+                        <tr>
+                            <td class="ID">21</td>
+                            <td>
+                                <div class="NameProduct">
+                                    <img src="images/gear4.webp" alt="">
+                                    <div class="NameProduct-de">Nike Guard Lock</div>
+                                </div>
+                            </td>    
+                                <td>Gear</td>
+
+                                <td class="Price">
+                                    £12.00
+                                </td>
+ 
+                                <td class="Edit">
+                                <a href="#"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                            </td>
+                                <td class="Delete1"><button><i class="fa-solid fa-trash-can"></i> Delete</button></td>
+
+                        </tr>
+                    </tb>
+                </table>
+            </div>
+        </section>
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+           
+                    const deleteButtons = document.querySelectorAll('.board .Delete1 button');
+        
+                    deleteButtons.forEach(function (button) {
+                        button.addEventListener('click', function () {
+                      
+                            var confirmDelete = confirm("Bạn có chắc chắn muốn xóa sản phẩm này không?");
+                            if (confirmDelete) {
+                     
+                                alert("Đã xóa thành công!");
+                            }
+                        });
+                    });
+            });
+        </script>
+</body>
+</html>

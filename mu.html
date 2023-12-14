@@ -16,7 +16,7 @@
         <div class="img-wrapper">
             <header>
                 <nav class="navbar">
-                    <i class="fas fa-shopping-cart cart-icon"></i>
+                    <i class="fas fa-shopping-cart cart-icon" onclick="Redirect();"></i>
                     <ul class="all-links">
                         <li><a href="./shoes.html">Football Shoes</a></li>
                         <li><a href="./retro.html">Football Retro </a></li>
@@ -213,21 +213,14 @@
                 </ul>
             </div>
         </div>
-        
-        
-   
-          
-
-
-  <!--<div class="cart">
-        <h1>Giỏ hàng</h1>
-        <ul id="cart-items"></ul>
-        <p>Tổng tiền: $<span id="total-price">0.00</span></p>
-        <button id="checkout">Thanh toán</button>
-    </div>
-   
-    <script src="script.js"></script>
-    <script src="script.js"></script>>--> 
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const cartshow = document.querySelector(".cart-icon");
+                cartshow.addEventListener("click", function Redirect() {
+                    window.location = "Cart.html";
+                })
+            });
+        </script>
        
 </body>
 </html>
