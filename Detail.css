@@ -250,6 +250,11 @@ a:hover{
     text-align: center;
     cursor: pointer;
 }
+.size-selector-list2:hover {
+    /* background-color: rgb(193, 193, 193); */
+    background-color: rgb(33, 32, 32);
+    color: white;
+}
 .size-selector-list:hover {
     /* background-color: rgb(193, 193, 193); */
     background-color: rgb(33, 32, 32);
