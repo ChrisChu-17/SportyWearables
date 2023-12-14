@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
+    <title>Edit</title>
+    <link rel="stylesheet" href="edit1.css">
+
+</head>
+<body>
+        <section id="menu">
+            <div class="logo">
+                <h2>SPORTY WEARABLES</h2>
+            </div>
+
+            <div class="items">
+                <li><a href="./AdminStatistics.html"><i class="fa-solid fa-house"></i> Statistics</a></li>
+                <li><a href="./AdminUser.html"><i class="fa-solid fa-user-gear"></i>User Management</a></li>
+                <li><a href="./AdminProduct.html"><i class="fa-solid fa-shirt"></i>Product Management</a></li>
+                <li><a href="./AdminOrdered.html"><i class="fa-solid fa-cart-shopping"></i>Order Management</a></li>
+            </div>
+        </section>
+    <section id="interface">
+        <div class="navigation"></div>
+        <h3 class="i-name">Edit</h3>
+        <div class="edit-Product">
+            <div id="edit-product-form" class="edit-product-form">
+                <label for="productName">Product Name:</label>
+                <input type="text" id="productName" required style="width: 70%;">
+                <br>
+                <label for="productType">Product type:</label>
+                <input type="text" id="productType" required style="margin-left: 12px;width: 70%;">
+                <br>
+                <label for="productPrice">Product Price:</label>
+                <input type="text" id="productPrice" required style="margin-left: 8px;width: 70%;">
+                <br>
+                <label for="productDescription">Product Description:</label>
+                <input type="text" id="productDescription" required style="width: 60%;">
+                
+                <label for="productImage"><i class="fa-solid fa-image"></i>Product Image:</label>
+                <input type="file" id="productImage" accept="image/*" required >
+                <br>
+                <a href="./AdminProduct.html"><button onclick="saveUser()"><i class="fa-solid fa-floppy-disk"></i> Save</button></a>
+            </div>
+        </div>
+    </section>
+    <script> 
+        function saveUser(){
+      
+        alert("lưu thành công!");
+    
+         };
+    </script>
+</body>
+</html>

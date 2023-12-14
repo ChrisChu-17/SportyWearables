@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    /* background: rgb(189, 188, 188); */
+    background-color: white;
+    position: relative;
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#menu {
+    background-color: #333;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#menu .logo {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px 0 0 30px;
+}
+
+#menu .items {
+    margin-top: 40px;
+}
+
+#menu .items li {
+    margin-bottom: 20%;
+}
+
+#menu .items li a {
+    list-style: none;
+    padding: 25px 0;
+    transition: 0.5 ease;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+#menu .items li:nth-child(4){
+    border-left: 4px solid #fff;
+}
+
+#menu .items li:hover {
+    background-color: #253047;
+    cursor: pointer;
+}
+
+#menu .items li i{
+    color: rgb(134, 141, 151);
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    font-size: 14px;
+    margin: 0 10px 0 25px;
+}
+
+#menu .items li:hover i,
+#menu .items li:hover a {
+    color: #ffffff;
+}
+
+#menu .items li i{
+    text-decoration: none;
+    color: rgb(134, 141, 151);
+    font-weight: 300px;
+    transition: 0.5s ease;
+}
+
+#interface {
+    width: calc(100% - 300px);
+    margin-left: 300px;
+    position: relative;
+}
+
+#interface .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 15px 30px;
+    border-bottom: 3px solid #333;
+}
+
+#interface .navigation .search {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .search i{
+    margin-right: 14px;
+}
+
+#interface .navigation .search input{
+    border: none;
+    outline: none;
+    font-size: 14px;
+
+}
+
+#interface .navigation .search:hover i {
+    color: rgb(134, 141, 151);
+}
+
+#interface .navigation #UsersType {
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .startDate #startDate {
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+#interface .navigation .endDate #endDate {
+    padding: 10px 10px;
+    font-size: 14px;
+    border: 1px solid #d7dbe6;
+    border-radius: 4px;
+}
+
+.add-Users button{
+    background-color: #444444;
+    color: white;
+    padding: 10px 22px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    /* margin-bottom: 4%; */
+}
+
+.add-Users button:hover {
+    opacity: 0.9;
+}
+
+/* #interface .navigation .add-Users {
+    padding: 10px 10px;
+    font-size: 14px;
+} */
+
+.i-name{
+    color: #020202;
+    padding: 30px 30px 0 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.board{
+    width: 94%;
+    margin: 30px 0px 30px 30px;
+    overflow: auto;
+    background-color:  #eef0f3;
+    border-radius: 8px;
+    padding-left: 25px;
+}
+
+.board .NameProduct img{
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.board h4{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.board .NameProduct {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+
+}
+
+tr {
+    border-bottom: 12px solid #eef0f3;
+}
+
+.board .td {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 3000;
+    text-align: center;
+    border-bottom: 10%;
+
+}
+
+tb tr td {
+    padding: 10px 15px;
+    font-weight: 3000;
+}
+
+.board .Status #Processed{
+    border: none;
+    background-color: #27ae60;
+    cursor: pointer;
+    color: #fff;
+    padding: 3px 18px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+}
+
+.board .Status #NoProcessed{
+    border: none;
+    background-color: rgb(240, 186, 85);
+    cursor: pointer;
+    color: #fff;
+    padding: 3px 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+}

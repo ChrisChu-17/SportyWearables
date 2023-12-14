@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/9954db1b5f.js" crossorigin="anonymous"></script>
-    <title>Manager</title>
-    <link rel="stylesheet" href="Manager.css">
+    <title>Edit</title>
+    <link rel="stylesheet" href="edit.css">
 
 </head>
 <body>
@@ -23,29 +23,29 @@
         </section>
     <section id="interface">
         <div class="navigation"></div>
-        <h3 class="i-name">Add User</h3>
-        <div class="add-Users">
-            <div id="add-user-form" class="add-user-form">
+        <h3 class="i-name">Edit</h3>
+        <div class="edit-user">
+            <div id="edit-user-form" class="edit-user-form">
                 <i class="fa-solid fa-user"></i>
                 <label for="username">Username :</label>
                 <input type="text" id="username" required style="margin-left: 4px;width: 70%;">
                 <br>
-                <i class="fa-solid fa-envelope"></i>
-                <label for="email">Email :</label>
-                <input type="email" id="email" required style="margin-left: 40px;width: 70%;">
+                <i class="fa-solid fa-phone"></i>
+                <label for="Phonenumber">Phonenumber :</label>
+                <input type="text" id="Phonenumber" required style="margin-left: 0%;width: 64%;">
                 <br>
                 <i class="fa-solid fa-lock"></i>
                 <label for="password">Password :</label>
                 <input type="password" id="password" required style="margin-left: 8px;width: 70%;">  
                 <br>
-                <a href="./AdminUser.html"><i class="fa-solid fa-floppy-disk"></i><button onclick="saveUser()">Save</button></a>
+                <a href="./AdminUser.html"><button onclick="saveUser()"><i class="fa-solid fa-floppy-disk"></i> Save </button></a>
             </div>
         </div>
     </section>
     <script> 
         function saveUser(){
       
-        alert("Người dùng đã được lưu thành công!");
+        alert("lưu thành công!");
     
          };
     </script>

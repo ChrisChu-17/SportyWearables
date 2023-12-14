@@ -102,7 +102,7 @@ body {
     font-weight: 700;
 }
 
-.add-Users {
+.edit-user {
     max-width: 500px;
     margin: 100px auto;
     background-color: white;
@@ -111,7 +111,7 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.add-Users button{
+.edit-user button{
     background-color: #444444;
     color: white;
     padding: 5px 22px;
@@ -122,7 +122,32 @@ body {
     margin-bottom: 4%;
 }
 
-.add-user-form input{
+.edit-user-form input{
+    height: 28px;
     margin-bottom: 5%;
 }
 
+.edit-Product {
+    max-width: 500px;
+    margin: 100px auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.edit-Product button{
+    background-color: #444444;
+    color: white;
+    padding: 5px 22px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-bottom: 4%;
+}
+
+.edit-product-form input{
+    height: 28px;
+    margin-bottom: 5%;
+}
