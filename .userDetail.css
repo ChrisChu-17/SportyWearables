@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color: #333;
+    line-height: 1.15;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 36px;
+    /* text-decoration: underline; */
+    padding: 10px 20px;
+    /* border: 1px solid #bebebe; */
+    /* background-color: #333; */
+    display: inline-block;
+}
+
+
+.headline {
+    text-align: center;
+    margin: 0px 0px;
+    /* background-color: #333; */
+    /* background-color: #333; */
+    /* color: red; */
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.headline h1 a{
+    text-decoration: none;
+    /* color: red; */
+    margin: 0 auto;
+    color: black;
+}
+
+
+.main-account {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.main-account .main-account-header {
+   /* margin-left: 320px; */
+   width: 300px;
+   margin: 0 auto;
+   font-size: larger;
+}
+
+.main-account .main-account-body{
+    margin-top: 2rem;
+    width: 60%;
+    height: max-content;
+    margin-left: 18rem;
+    margin-right: 20rem;
+    display: flex;
+    justify-content: space-between;
+}
+ 
+.main-account-body-col {
+    margin-left: 40px;
+    width: 50%;
+}
+
+.main-account-body-col .info-user{
+    margin-left: 140px;
+}
+
+.main-account-body-col .change-password{
+    margin-left: 60px;
+}
+
+.form-group {
+    width: 150px;
+    margin-top: 10px;
+}
+
+.form-group #infoname, .form-group #infophone, .form-group #infoemail, .form-group #infoaddress {
+    margin-top: 5px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.form-group #password-cur-info, .form-group #password-after-info, .form-group #password-comfirm-info{
+    margin-top: 5px;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 1px solid #333;
+}
+
+.main-account-body-col #save-info-user{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-account-body-col #save-info-user:hover {
+    opacity: 0.9;
+}
+
+.main-account-body-col #save-password{
+    margin-top: 85px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.main-account-body-col #save-password:hover {
+    opacity: 0.9;
+}

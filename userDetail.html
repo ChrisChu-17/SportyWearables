@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".userDetail.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="headline">
+        <h1><a href="./index1.html">SPORTY WEARABLES</a></h1>
+      </div>
+    <hr>
+    <div class="main-account">
+            <div class="main-account-header">
+                <h3>Your account information</h3>
+            </div>
+            <div class="main-account-body">
+                <div class="main-account-body-col">
+                    <form action="" class="info-user">
+                        <div class="form-group">
+                            <label for="infoname" class="form-label">Fullname</label> <br>
+                            <input class="form-control" type="text" name="infoname" id="infoname" disabled="true" placeholder="Chris Chu">
+                        </div>
+                        <div class="form-group">
+                            <label for="infophone" class="form-label">Number</label>
+                            <input class="form-control" type="text" name="infophone" id="infophone" disabled="true"
+                                placeholder="0123456">
+                        </div>
+                        <div class="form-group">
+                            <label for="infoemail" class="form-label">Email</label>
+                            <input class="form-control" type="email" name="infoemail" id="infoemail"
+                                placeholder="Add your email address">
+                            <span class="inforemail-error form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="infoaddress" class="form-label">Address</label>
+                            <input class="form-control" type="text" name="infoaddress" id="infoaddress"
+                                placeholder="Add your address">
+                        </div>
+                        <div>
+                            <button id="save-info-user" onclick="confirmChangeInformation()"><i
+                                    class="fa-regular fa-floppy-disk"></i> Save</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="main-account-body-col">
+                    <form action="" class="change-password">
+                        <div class="form-group">
+                            <label for="" class="form-label w60">Password Recently</label>
+                            <input class="form-control" type="password" name="" id="password-cur-info"
+                                placeholder="Type your recent password">
+                            <span class="password-cur-info-error form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label w60">New Password</label>
+                            <input class="form-control" type="password" name="" id="password-after-info"
+                                placeholder="Type your new pasasword">
+                            <span class="password-after-info-error form-message"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="" class="form-label w60">Confirm Password</label>
+                            <input class="form-control" type="password" name="" id="password-comfirm-info"
+                                placeholder="confirm your new password">
+                            <span class="password-after-comfirm-error form-message"></span>
+                        </div>
+                        <div>
+                            <button id="save-password" onclick="confirmChangePassword()"><i class="fa-regular fa-key"></i> Change Password</button>
+                        </div>
+                    </form>
+                </div>
+               
+            </div>
+    </div>
+    <script>
+        function confirmChangeInformation() {
+            var isConfirmed = confirm("Bạn có chắc chắn thay đổi thông tin này?");
+            if (isConfirmed) {
+                // Thực hiện lưu thông tin hoặc các hành động khác ở đây
+                alert("Thông tin đã được lưu!");
+            }
+        }
+
+        function confirmChangePassword() {
+            var isConfirmed = confirm("Bạn có chắc chắn muốn thay đổi mật khẩu không?");
+            if (isConfirmed) {
+                // Thực hiện đổi mật khẩu hoặc các hành động khác ở đây
+                alert("Mật khẩu đã được thay đổi!");
+            }
+        }
+    </script>
+</body>
+</html>
