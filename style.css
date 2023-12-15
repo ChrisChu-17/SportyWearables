@@ -425,7 +425,6 @@ section.about {
 
 .img-4:hover  {
   transform: scale(1.1);
-  
   opacity: 1;
 }
 
@@ -676,7 +675,7 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background: #000;
+  background: #333;
   padding: 20px 0;
 }
 
