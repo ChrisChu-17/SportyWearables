@@ -204,7 +204,7 @@ a {
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
-a:hover{
+.Size-text:hover{
     color: white;
 }
 .size-selector-list1{

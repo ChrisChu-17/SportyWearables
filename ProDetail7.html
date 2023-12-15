@@ -225,5 +225,23 @@
           </span>
         </div>
       </footer>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Đợi cho trang web được tải hoàn toàn
+
+            // Lấy đối tượng button customise theo ID
+            var customiseButton = document.querySelector('.customise-selector-button');
+
+            // Kiểm tra xem nút đã được tìm thấy hay không
+            if (customiseButton) {
+                // Gắn sự kiện click cho nút customise
+                customiseButton.addEventListener('click', function () {
+                    // Hiển thị thông báo
+                    alert("Chúng tôi chưa phục vụ chức năng này");
+                });
+            }
+        });
+    </script>
 </body>
 </html>
